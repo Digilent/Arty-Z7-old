@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:axi_crossbar:2.1
-// IP Revision: 9
+// IP Revision: 10
 
 `timescale 1ns/1ps
 
@@ -196,7 +196,7 @@ input wire [8 : 0] m_axi_rvalid;
 .0 M08_AXI RREADY [0:0] [8:8]" *)
 output wire [8 : 0] m_axi_rready;
 
-  axi_crossbar_v2_1_9_axi_crossbar #(
+  axi_crossbar_v2_1_10_axi_crossbar #(
     .C_FAMILY("zynq"),
     .C_NUM_SLAVE_SLOTS(1),
     .C_NUM_MASTER_SLOTS(9),

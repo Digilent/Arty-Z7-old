@@ -48,7 +48,7 @@
 
 
 // IP VLNV: xilinx.com:ip:v_axi4s_vid_out:4.0
-// IP Revision: 2
+// IP Revision: 3
 
 `timescale 1ns/1ps
 
@@ -141,7 +141,7 @@ output wire overflow;
 output wire underflow;
 output wire [31 : 0] status;
 
-  v_axi4s_vid_out_v4_0_2 #(
+  v_axi4s_vid_out_v4_0_3 #(
     .C_FAMILY("zynq"),
     .C_PIXELS_PER_CLOCK(1),
     .C_COMPONENTS_PER_PIXEL(3),

@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-// Date        : Tue Aug 09 00:35:03 2016
+// Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+// Date        : Tue Aug 09 01:00:05 2016
 // Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
-//               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_xbar_0/linux_bd_xbar_0_sim_netlist.v
+//               c:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_xbar_0/linux_bd_xbar_0_sim_netlist.v
 // Design      : linux_bd_xbar_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "linux_bd_xbar_0,axi_crossbar_v2_1_9_axi_crossbar,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_crossbar_v2_1_9_axi_crossbar,Vivado 2016.1" *) 
+(* CHECK_LICENSE_TYPE = "linux_bd_xbar_0,axi_crossbar_v2_1_10_axi_crossbar,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_crossbar_v2_1_10_axi_crossbar,Vivado 2016.2" *) 
 (* NotValidForBitStream *)
 module linux_bd_xbar_0
    (aclk,
@@ -212,7 +212,7 @@ module linux_bd_xbar_0
   (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
   (* P_S_AXI_SUPPORTS_READ = "1'b1" *) 
   (* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
-  linux_bd_xbar_0_axi_crossbar_v2_1_9_axi_crossbar inst
+  linux_bd_xbar_0_axi_crossbar_v2_1_10_axi_crossbar inst
        (.aclk(aclk),
         .aresetn(aresetn),
         .m_axi_araddr(m_axi_araddr),
@@ -305,8 +305,8 @@ module linux_bd_xbar_0
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_9_addr_arbiter_sasd" *) 
-module linux_bd_xbar_0_axi_crossbar_v2_1_9_addr_arbiter_sasd
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_10_addr_arbiter_sasd" *) 
+module linux_bd_xbar_0_axi_crossbar_v2_1_10_addr_arbiter_sasd
    (m_valid_i,
     SR,
     aa_grant_rnw,
@@ -2208,14 +2208,14 @@ endmodule
 (* C_NUM_MASTER_SLOTS = "9" *) (* C_NUM_SLAVE_SLOTS = "1" *) (* C_R_REGISTER = "1" *) 
 (* C_S_AXI_ARB_PRIORITY = "0" *) (* C_S_AXI_BASE_ID = "0" *) (* C_S_AXI_READ_ACCEPTANCE = "1" *) 
 (* C_S_AXI_SINGLE_THREAD = "1" *) (* C_S_AXI_THREAD_ID_WIDTH = "0" *) (* C_S_AXI_WRITE_ACCEPTANCE = "1" *) 
-(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_crossbar_v2_1_9_axi_crossbar" *) (* P_ADDR_DECODE = "1" *) 
+(* DowngradeIPIdentifiedWarnings = "yes" *) (* ORIG_REF_NAME = "axi_crossbar_v2_1_10_axi_crossbar" *) (* P_ADDR_DECODE = "1" *) 
 (* P_AXI3 = "1" *) (* P_AXI4 = "0" *) (* P_AXILITE = "2" *) 
 (* P_AXILITE_SIZE = "3'b010" *) (* P_FAMILY = "zynq" *) (* P_INCR = "2'b01" *) 
 (* P_LEN = "8" *) (* P_LOCK = "1" *) (* P_M_AXI_ERR_MODE = "288'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000" *) 
 (* P_M_AXI_SUPPORTS_READ = "9'b111111111" *) (* P_M_AXI_SUPPORTS_WRITE = "9'b111111111" *) (* P_ONES = "65'b11111111111111111111111111111111111111111111111111111111111111111" *) 
 (* P_RANGE_CHECK = "1" *) (* P_S_AXI_BASE_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) (* P_S_AXI_HIGH_ID = "64'b0000000000000000000000000000000000000000000000000000000000000000" *) 
 (* P_S_AXI_SUPPORTS_READ = "1'b1" *) (* P_S_AXI_SUPPORTS_WRITE = "1'b1" *) 
-module linux_bd_xbar_0_axi_crossbar_v2_1_9_axi_crossbar
+module linux_bd_xbar_0_axi_crossbar_v2_1_10_axi_crossbar
    (aclk,
     aresetn,
     s_axi_awid,
@@ -3046,7 +3046,7 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_axi_crossbar
   assign s_axi_ruser[0] = \<const0> ;
   GND GND
        (.G(\<const0> ));
-  linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd \gen_sasd.crossbar_sasd_0 
+  linux_bd_xbar_0_axi_crossbar_v2_1_10_crossbar_sasd \gen_sasd.crossbar_sasd_0 
        (.Q({\^m_axi_arprot ,\^m_axi_awaddr ,\^m_axi_araddr }),
         .aclk(aclk),
         .aresetn(aresetn),
@@ -3081,8 +3081,8 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_axi_crossbar
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_9_crossbar_sasd" *) 
-module linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_10_crossbar_sasd" *) 
+module linux_bd_xbar_0_axi_crossbar_v2_1_10_crossbar_sasd
    (s_axi_awready,
     Q,
     \s_axi_rdata[31] ,
@@ -3237,7 +3237,7 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd
   wire splitter_aw_n_3;
   wire sr_rvalid;
 
-  linux_bd_xbar_0_axi_crossbar_v2_1_9_addr_arbiter_sasd addr_arbiter_inst
+  linux_bd_xbar_0_axi_crossbar_v2_1_10_addr_arbiter_sasd addr_arbiter_inst
        (.D(m_atarget_hot0),
         .E(addr_arbiter_inst_n_6),
         .Q(Q),
@@ -3312,7 +3312,7 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd
         .D(aresetn),
         .Q(aresetn_d),
         .R(1'b0));
-  linux_bd_xbar_0_axi_crossbar_v2_1_9_decerr_slave \gen_decerr.decerr_slave_inst 
+  linux_bd_xbar_0_axi_crossbar_v2_1_10_decerr_slave \gen_decerr.decerr_slave_inst 
        (.Q(m_atarget_hot[9]),
         .SR(reset),
         .aa_rready(aa_rready),
@@ -3422,7 +3422,7 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd
         .D(m_atarget_hot0[9]),
         .Q(m_atarget_hot[9]),
         .R(reset));
-  linux_bd_xbar_0_axi_register_slice_v2_1_8_axic_register_slice reg_slice_r
+  linux_bd_xbar_0_axi_register_slice_v2_1_9_axic_register_slice reg_slice_r
        (.E(addr_arbiter_inst_n_6),
         .Q(m_atarget_hot[8:0]),
         .SR(reset),
@@ -3542,7 +3542,7 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd
         .I4(m_atarget_enc[1]),
         .I5(m_atarget_enc[2]),
         .O(\s_axi_bresp[1]_INST_0_i_8_n_0 ));
-  linux_bd_xbar_0_axi_crossbar_v2_1_9_splitter__parameterized0 splitter_ar
+  linux_bd_xbar_0_axi_crossbar_v2_1_10_splitter__parameterized0 splitter_ar
        (.aclk(aclk),
         .aresetn_d(aresetn_d),
         .\gen_no_arbiter.m_valid_i_reg (splitter_ar_n_0),
@@ -3554,7 +3554,7 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd
         .\m_payload_i_reg[0] (reg_slice_r_n_2),
         .m_ready_d(m_ready_d),
         .mi_arready_mux(mi_arready_mux));
-  linux_bd_xbar_0_axi_crossbar_v2_1_9_splitter splitter_aw
+  linux_bd_xbar_0_axi_crossbar_v2_1_10_splitter splitter_aw
        (.aa_awready(aa_awready),
         .aa_bvalid(aa_bvalid),
         .aa_grant_rnw(aa_grant_rnw),
@@ -3577,8 +3577,8 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_crossbar_sasd
         .s_axi_wvalid(s_axi_wvalid));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_9_decerr_slave" *) 
-module linux_bd_xbar_0_axi_crossbar_v2_1_9_decerr_slave
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_10_decerr_slave" *) 
+module linux_bd_xbar_0_axi_crossbar_v2_1_10_decerr_slave
    (mi_bvalid,
     mi_wready,
     \m_ready_d_reg[1] ,
@@ -3764,8 +3764,8 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_decerr_slave
         .O(\m_ready_d_reg[1]_0 ));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_9_splitter" *) 
-module linux_bd_xbar_0_axi_crossbar_v2_1_9_splitter
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_10_splitter" *) 
+module linux_bd_xbar_0_axi_crossbar_v2_1_10_splitter
    (\gen_no_arbiter.m_valid_i_reg ,
     \gen_no_arbiter.m_valid_i_reg_0 ,
     \gen_no_arbiter.m_valid_i_reg_1 ,
@@ -3913,8 +3913,8 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_splitter
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_crossbar_v2_1_9_splitter" *) 
-module linux_bd_xbar_0_axi_crossbar_v2_1_9_splitter__parameterized0
+(* ORIG_REF_NAME = "axi_crossbar_v2_1_10_splitter" *) 
+module linux_bd_xbar_0_axi_crossbar_v2_1_10_splitter__parameterized0
    (\gen_no_arbiter.m_valid_i_reg ,
     m_ready_d,
     \m_payload_i_reg[0] ,
@@ -3996,8 +3996,8 @@ module linux_bd_xbar_0_axi_crossbar_v2_1_9_splitter__parameterized0
         .R(1'b0));
 endmodule
 
-(* ORIG_REF_NAME = "axi_register_slice_v2_1_8_axic_register_slice" *) 
-module linux_bd_xbar_0_axi_register_slice_v2_1_8_axic_register_slice
+(* ORIG_REF_NAME = "axi_register_slice_v2_1_9_axic_register_slice" *) 
+module linux_bd_xbar_0_axi_register_slice_v2_1_9_axic_register_slice
    (sr_rvalid,
     aa_rready,
     \m_ready_d_reg[1] ,

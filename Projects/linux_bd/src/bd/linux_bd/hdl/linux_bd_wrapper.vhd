@@ -1,7 +1,7 @@
 --Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
---Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
---Date        : Tue Aug 09 00:41:00 2016
+--Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+--Date        : Tue Aug 09 00:54:30 2016
 --Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 --Command     : generate_target linux_bd_wrapper.bd
 --Design      : linux_bd_wrapper
@@ -105,7 +105,9 @@ architecture STRUCTURE of linux_bd_wrapper is
     shield_dp0_dp13_tri_i : in STD_LOGIC_VECTOR ( 13 downto 0 );
     shield_dp0_dp13_tri_o : out STD_LOGIC_VECTOR ( 13 downto 0 );
     shield_dp0_dp13_tri_t : out STD_LOGIC_VECTOR ( 13 downto 0 );
+    leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
     leds_4bits_tri_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 );
     RGBLED_tri_i : in STD_LOGIC_VECTOR ( 5 downto 0 );
     RGBLED_tri_o : out STD_LOGIC_VECTOR ( 5 downto 0 );
     RGBLED_tri_t : out STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -160,9 +162,7 @@ architecture STRUCTURE of linux_bd_wrapper is
     Vaux15_v_p : in STD_LOGIC;
     shield_dp26_dp41_tri_i : in STD_LOGIC_VECTOR ( 15 downto 0 );
     shield_dp26_dp41_tri_o : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    shield_dp26_dp41_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 );
-    leds_4bits_tri_i : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    leds_4bits_tri_t : out STD_LOGIC_VECTOR ( 3 downto 0 )
+    shield_dp26_dp41_tri_t : out STD_LOGIC_VECTOR ( 15 downto 0 )
   );
   end component linux_bd;
   component IOBUF is

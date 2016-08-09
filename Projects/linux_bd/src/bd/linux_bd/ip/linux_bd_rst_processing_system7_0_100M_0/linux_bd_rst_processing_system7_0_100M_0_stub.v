@@ -1,10 +1,10 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-// Date        : Tue Aug 09 00:31:43 2016
+// Date        : Tue Aug 09 00:31:40 2016
 // Host        : WK73 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode synth_stub
-//               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_rst_processing_system7_0_100M_0/linux_bd_rst_processing_system7_0_100M_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top linux_bd_rst_processing_system7_0_100M_0 -prefix linux_bd_rst_processing_system7_0_100M_0_
+//               linux_bd_rst_processing_system7_0_100M_0_stub.v
 // Design      : linux_bd_rst_processing_system7_0_100M_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg400-1

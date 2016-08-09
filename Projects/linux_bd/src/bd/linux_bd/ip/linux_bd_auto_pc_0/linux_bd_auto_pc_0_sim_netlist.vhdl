@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:36:40 2016
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Tue Aug 09 01:01:34 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim -rename_top linux_bd_auto_pc_0 -prefix linux_bd_auto_pc_0_
---               linux_bd_auto_pc_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_auto_pc_0/linux_bd_auto_pc_0_sim_netlist.vhdl
 -- Design      : linux_bd_auto_pc_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_dmem\ is
+entity linux_bd_auto_pc_0_dmem is
   port (
     p_0_out : out STD_LOGIC;
     dout_i : out STD_LOGIC;
@@ -30,9 +30,11 @@ entity \linux_bd_auto_pc_0_dmem\ is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     dout : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end \linux_bd_auto_pc_0_dmem\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_dmem : entity is "dmem";
+end linux_bd_auto_pc_0_dmem;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_dmem\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_dmem is
   signal \^dout_i\ : STD_LOGIC;
   signal NLW_RAM_reg_0_31_0_0_SPO_UNCONNECTED : STD_LOGIC;
 begin
@@ -84,7 +86,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_rd_bin_cntr\ is
+entity linux_bd_auto_pc_0_rd_bin_cntr is
   port (
     Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
     ram_full_comb : out STD_LOGIC;
@@ -98,9 +100,11 @@ entity \linux_bd_auto_pc_0_rd_bin_cntr\ is
     clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.rd_rst_reg_reg[0]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end \linux_bd_auto_pc_0_rd_bin_cntr\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_rd_bin_cntr : entity is "rd_bin_cntr";
+end linux_bd_auto_pc_0_rd_bin_cntr;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_rd_bin_cntr\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_rd_bin_cntr is
   signal \^q\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal plusOp : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal ram_full_i_i_2_n_0 : STD_LOGIC;
@@ -354,7 +358,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_rd_fwft\ is
+entity linux_bd_auto_pc_0_rd_fwft is
   port (
     empty : out STD_LOGIC;
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -368,9 +372,11 @@ entity \linux_bd_auto_pc_0_rd_fwft\ is
     p_0_out : in STD_LOGIC;
     dout_i : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_rd_fwft\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_rd_fwft : entity is "rd_fwft";
+end linux_bd_auto_pc_0_rd_fwft;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_rd_fwft\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_rd_fwft is
   signal empty_fwft_fb : STD_LOGIC;
   signal empty_fwft_i0 : STD_LOGIC;
   signal \^empty_fwft_i_reg_0\ : STD_LOGIC_VECTOR ( 1 downto 0 );
@@ -503,16 +509,18 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_rd_status_flags_ss\ is
+entity linux_bd_auto_pc_0_rd_status_flags_ss is
   port (
     p_2_out : out STD_LOGIC;
     ram_empty_fb_i_reg_0 : in STD_LOGIC;
     clk : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end \linux_bd_auto_pc_0_rd_status_flags_ss\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_rd_status_flags_ss : entity is "rd_status_flags_ss";
+end linux_bd_auto_pc_0_rd_status_flags_ss;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_rd_status_flags_ss\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_rd_status_flags_ss is
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_empty_fb_i_reg : label is "no";
 begin
@@ -532,16 +540,18 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_reset_blk_ramfifo\ is
+entity linux_bd_auto_pc_0_reset_blk_ramfifo is
   port (
     Q : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \gcc0.gc0.count_d1_reg[0]\ : out STD_LOGIC_VECTOR ( 1 downto 0 );
     clk : in STD_LOGIC;
     rst : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_reset_blk_ramfifo\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_reset_blk_ramfifo : entity is "reset_blk_ramfifo";
+end linux_bd_auto_pc_0_reset_blk_ramfifo;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_reset_blk_ramfifo\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_reset_blk_ramfifo is
   signal \ngwrdrst.grst.g7serrst.rd_rst_asreg_i_1_n_0\ : STD_LOGIC;
   signal \ngwrdrst.grst.g7serrst.rd_rst_reg[2]_i_1_n_0\ : STD_LOGIC;
   signal \ngwrdrst.grst.g7serrst.wr_rst_asreg_i_1_n_0\ : STD_LOGIC;
@@ -781,7 +791,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_wr_bin_cntr\ is
+entity linux_bd_auto_pc_0_wr_bin_cntr is
   port (
     ram_empty_fb_i_reg : out STD_LOGIC;
     Q : out STD_LOGIC_VECTOR ( 4 downto 0 );
@@ -796,9 +806,11 @@ entity \linux_bd_auto_pc_0_wr_bin_cntr\ is
     clk : in STD_LOGIC;
     \ngwrdrst.grst.g7serrst.wr_rst_reg_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end \linux_bd_auto_pc_0_wr_bin_cntr\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_wr_bin_cntr : entity is "wr_bin_cntr";
+end linux_bd_auto_pc_0_wr_bin_cntr;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_wr_bin_cntr\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_wr_bin_cntr is
   signal \^q\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal \plusOp__0\ : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal ram_empty_fb_i_i_2_n_0 : STD_LOGIC;
@@ -1015,7 +1027,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_wr_status_flags_ss\ is
+entity linux_bd_auto_pc_0_wr_status_flags_ss is
   port (
     p_1_out : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -1025,9 +1037,11 @@ entity \linux_bd_auto_pc_0_wr_status_flags_ss\ is
     Q : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_en : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_wr_status_flags_ss\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_wr_status_flags_ss : entity is "wr_status_flags_ss";
+end linux_bd_auto_pc_0_wr_status_flags_ss;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_wr_status_flags_ss\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_wr_status_flags_ss is
   signal \^p_1_out\ : STD_LOGIC;
   attribute equivalent_register_removal : string;
   attribute equivalent_register_removal of ram_full_fb_i_reg : label is "no";
@@ -1070,7 +1084,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_memory\ is
+entity linux_bd_auto_pc_0_memory is
   port (
     p_0_out : out STD_LOGIC;
     dout_i : out STD_LOGIC;
@@ -1085,14 +1099,16 @@ entity \linux_bd_auto_pc_0_memory\ is
     rd_en : in STD_LOGIC;
     Q : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-end \linux_bd_auto_pc_0_memory\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_memory : entity is "memory";
+end linux_bd_auto_pc_0_memory;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_memory\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_memory is
   signal \^dout\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \gdm.dm_gen.dm_n_2\ : STD_LOGIC;
 begin
   dout(0) <= \^dout\(0);
-\gdm.dm_gen.dm\: entity work.\linux_bd_auto_pc_0_dmem\
+\gdm.dm_gen.dm\: entity work.linux_bd_auto_pc_0_dmem
      port map (
       E(0) => E(0),
       Q(0) => Q(0),
@@ -1124,7 +1140,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_rd_logic\ is
+entity linux_bd_auto_pc_0_rd_logic is
   port (
     p_2_out : out STD_LOGIC;
     empty : out STD_LOGIC;
@@ -1146,14 +1162,16 @@ entity \linux_bd_auto_pc_0_rd_logic\ is
     wr_en : in STD_LOGIC;
     \gcc0.gc0.count_reg[4]\ : in STD_LOGIC_VECTOR ( 4 downto 0 )
   );
-end \linux_bd_auto_pc_0_rd_logic\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_rd_logic : entity is "rd_logic";
+end linux_bd_auto_pc_0_rd_logic;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_rd_logic\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_rd_logic is
   signal \gr1.gr1_int.rfwft_n_1\ : STD_LOGIC;
   signal \^p_2_out\ : STD_LOGIC;
 begin
   p_2_out <= \^p_2_out\;
-\gr1.gr1_int.rfwft\: entity work.\linux_bd_auto_pc_0_rd_fwft\
+\gr1.gr1_int.rfwft\: entity work.linux_bd_auto_pc_0_rd_fwft
      port map (
       E(0) => \gr1.gr1_int.rfwft_n_1\,
       Q(0) => Q(1),
@@ -1167,14 +1185,14 @@ begin
       ram_empty_fb_i_reg_0 => \^p_2_out\,
       rd_en => rd_en
     );
-\grss.rsts\: entity work.\linux_bd_auto_pc_0_rd_status_flags_ss\
+\grss.rsts\: entity work.linux_bd_auto_pc_0_rd_status_flags_ss
      port map (
       Q(0) => Q(1),
       clk => clk,
       p_2_out => \^p_2_out\,
       ram_empty_fb_i_reg_0 => ram_empty_fb_i_reg_0
     );
-rpntr: entity work.\linux_bd_auto_pc_0_rd_bin_cntr\
+rpntr: entity work.linux_bd_auto_pc_0_rd_bin_cntr
      port map (
       E(0) => \gr1.gr1_int.rfwft_n_1\,
       Q(4 downto 0) => \gc0.count_d1_reg[4]\(4 downto 0),
@@ -1193,7 +1211,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_wr_logic\ is
+entity linux_bd_auto_pc_0_wr_logic is
   port (
     p_1_out : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -1210,15 +1228,17 @@ entity \linux_bd_auto_pc_0_wr_logic\ is
     \gc0.count_reg[4]\ : in STD_LOGIC_VECTOR ( 4 downto 0 );
     \gpregsm1.curr_fwft_state_reg[1]\ : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_wr_logic\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_wr_logic : entity is "wr_logic";
+end linux_bd_auto_pc_0_wr_logic;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_wr_logic\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_wr_logic is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^p_1_out\ : STD_LOGIC;
 begin
   E(0) <= \^e\(0);
   p_1_out <= \^p_1_out\;
-\gwss.wsts\: entity work.\linux_bd_auto_pc_0_wr_status_flags_ss\
+\gwss.wsts\: entity work.linux_bd_auto_pc_0_wr_status_flags_ss
      port map (
       E(0) => \^e\(0),
       Q(0) => Q(0),
@@ -1228,7 +1248,7 @@ begin
       ram_full_comb => ram_full_comb,
       wr_en => wr_en
     );
-wpntr: entity work.\linux_bd_auto_pc_0_wr_bin_cntr\
+wpntr: entity work.linux_bd_auto_pc_0_wr_bin_cntr
      port map (
       E(0) => \^e\(0),
       Q(4 downto 0) => \gcc0.gc0.count_d1_reg[4]\(4 downto 0),
@@ -1248,7 +1268,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_fifo_generator_ramfifo\ is
+entity linux_bd_auto_pc_0_fifo_generator_ramfifo is
   port (
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -1259,9 +1279,11 @@ entity \linux_bd_auto_pc_0_fifo_generator_ramfifo\ is
     din : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_en : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_fifo_generator_ramfifo\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_fifo_generator_ramfifo : entity is "fifo_generator_ramfifo";
+end linux_bd_auto_pc_0_fifo_generator_ramfifo;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_fifo_generator_ramfifo\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_fifo_generator_ramfifo is
   signal RD_RST : STD_LOGIC;
   signal RST_FULL_FF : STD_LOGIC;
   signal dout_i : STD_LOGIC;
@@ -1283,7 +1305,7 @@ architecture STRUCTURE of \linux_bd_auto_pc_0_fifo_generator_ramfifo\ is
   signal rd_rst_i : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rstblk_n_2 : STD_LOGIC;
 begin
-\gntv_or_sync_fifo.gl0.rd\: entity work.\linux_bd_auto_pc_0_rd_logic\
+\gntv_or_sync_fifo.gl0.rd\: entity work.linux_bd_auto_pc_0_rd_logic
      port map (
       Q(1) => RD_RST,
       Q(0) => rd_rst_i(0),
@@ -1307,7 +1329,7 @@ begin
       rd_en => rd_en,
       wr_en => wr_en
     );
-\gntv_or_sync_fifo.gl0.wr\: entity work.\linux_bd_auto_pc_0_wr_logic\
+\gntv_or_sync_fifo.gl0.wr\: entity work.linux_bd_auto_pc_0_wr_logic
      port map (
       E(0) => ram_wr_en_into_logic,
       Q(1) => rstblk_n_2,
@@ -1325,7 +1347,7 @@ begin
       ram_full_comb => \gwss.wsts/ram_full_comb\,
       wr_en => wr_en
     );
-\gntv_or_sync_fifo.mem\: entity work.\linux_bd_auto_pc_0_memory\
+\gntv_or_sync_fifo.mem\: entity work.linux_bd_auto_pc_0_memory
      port map (
       E(0) => ram_wr_en_into_logic,
       Q(0) => rd_rst_i(0),
@@ -1341,7 +1363,7 @@ begin
       ram_empty_fb_i_reg => \gntv_or_sync_fifo.gl0.rd_n_4\,
       rd_en => rd_en
     );
-rstblk: entity work.\linux_bd_auto_pc_0_reset_blk_ramfifo\
+rstblk: entity work.linux_bd_auto_pc_0_reset_blk_ramfifo
      port map (
       Q(1) => RD_RST,
       Q(0) => rd_rst_i(0),
@@ -1355,7 +1377,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_fifo_generator_top\ is
+entity linux_bd_auto_pc_0_fifo_generator_top is
   port (
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -1366,11 +1388,13 @@ entity \linux_bd_auto_pc_0_fifo_generator_top\ is
     din : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_en : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_fifo_generator_top\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_fifo_generator_top : entity is "fifo_generator_top";
+end linux_bd_auto_pc_0_fifo_generator_top;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_fifo_generator_top\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_fifo_generator_top is
 begin
-\grf.rf\: entity work.\linux_bd_auto_pc_0_fifo_generator_ramfifo\
+\grf.rf\: entity work.linux_bd_auto_pc_0_fifo_generator_ramfifo
      port map (
       clk => clk,
       din(0) => din(0),
@@ -1386,7 +1410,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_fifo_generator_v13_1_0_synth\ is
+entity linux_bd_auto_pc_0_fifo_generator_v13_1_1_synth is
   port (
     empty : out STD_LOGIC;
     full : out STD_LOGIC;
@@ -1397,11 +1421,13 @@ entity \linux_bd_auto_pc_0_fifo_generator_v13_1_0_synth\ is
     din : in STD_LOGIC_VECTOR ( 0 to 0 );
     wr_en : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_fifo_generator_v13_1_0_synth\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_fifo_generator_v13_1_1_synth : entity is "fifo_generator_v13_1_1_synth";
+end linux_bd_auto_pc_0_fifo_generator_v13_1_1_synth;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0_synth\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_fifo_generator_v13_1_1_synth is
 begin
-\gconvfifo.rf\: entity work.\linux_bd_auto_pc_0_fifo_generator_top\
+\gconvfifo.rf\: entity work.linux_bd_auto_pc_0_fifo_generator_top
      port map (
       clk => clk,
       din(0) => din(0),
@@ -1417,7 +1443,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ is
+entity linux_bd_auto_pc_0_fifo_generator_v13_1_1 is
   port (
     backup : in STD_LOGIC;
     backup_marker : in STD_LOGIC;
@@ -1652,412 +1678,414 @@ entity \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ is
     axis_prog_empty : out STD_LOGIC
   );
   attribute C_ADD_NGC_CONSTRAINT : integer;
-  attribute C_ADD_NGC_CONSTRAINT of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ADD_NGC_CONSTRAINT of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_APPLICATION_TYPE_AXIS : integer;
-  attribute C_APPLICATION_TYPE_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_APPLICATION_TYPE_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_APPLICATION_TYPE_RACH : integer;
-  attribute C_APPLICATION_TYPE_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_APPLICATION_TYPE_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_APPLICATION_TYPE_RDCH : integer;
-  attribute C_APPLICATION_TYPE_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_APPLICATION_TYPE_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_APPLICATION_TYPE_WACH : integer;
-  attribute C_APPLICATION_TYPE_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_APPLICATION_TYPE_WDCH : integer;
-  attribute C_APPLICATION_TYPE_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_APPLICATION_TYPE_WRCH : integer;
-  attribute C_APPLICATION_TYPE_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_APPLICATION_TYPE_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_AXIS_TDATA_WIDTH : integer;
-  attribute C_AXIS_TDATA_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 64;
+  attribute C_AXIS_TDATA_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 64;
   attribute C_AXIS_TDEST_WIDTH : integer;
-  attribute C_AXIS_TDEST_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_AXIS_TDEST_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_AXIS_TID_WIDTH : integer;
-  attribute C_AXIS_TID_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 8;
+  attribute C_AXIS_TID_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 8;
   attribute C_AXIS_TKEEP_WIDTH : integer;
-  attribute C_AXIS_TKEEP_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_AXIS_TKEEP_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_AXIS_TSTRB_WIDTH : integer;
-  attribute C_AXIS_TSTRB_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_AXIS_TSTRB_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_AXIS_TUSER_WIDTH : integer;
-  attribute C_AXIS_TUSER_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_AXIS_TUSER_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_AXIS_TYPE : integer;
-  attribute C_AXIS_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_AXIS_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 32;
+  attribute C_AXI_ADDR_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 32;
   attribute C_AXI_ARUSER_WIDTH : integer;
-  attribute C_AXI_ARUSER_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_AXI_ARUSER_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
-  attribute C_AXI_AWUSER_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_AXI_AWUSER_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_AXI_BUSER_WIDTH : integer;
-  attribute C_AXI_BUSER_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_AXI_BUSER_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 64;
+  attribute C_AXI_DATA_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 64;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_AXI_ID_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_AXI_LEN_WIDTH : integer;
-  attribute C_AXI_LEN_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 8;
+  attribute C_AXI_LEN_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 8;
   attribute C_AXI_LOCK_WIDTH : integer;
-  attribute C_AXI_LOCK_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 2;
+  attribute C_AXI_LOCK_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 2;
   attribute C_AXI_RUSER_WIDTH : integer;
-  attribute C_AXI_RUSER_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_AXI_RUSER_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_AXI_TYPE : integer;
-  attribute C_AXI_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_AXI_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_AXI_WUSER_WIDTH : integer;
-  attribute C_AXI_WUSER_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_AXI_WUSER_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_COMMON_CLOCK : integer;
-  attribute C_COMMON_CLOCK of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_COMMON_CLOCK of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_COUNT_TYPE : integer;
-  attribute C_COUNT_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_COUNT_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_DATA_COUNT_WIDTH : integer;
-  attribute C_DATA_COUNT_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 6;
+  attribute C_DATA_COUNT_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 6;
   attribute C_DEFAULT_VALUE : string;
-  attribute C_DEFAULT_VALUE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "BlankString";
+  attribute C_DEFAULT_VALUE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "BlankString";
   attribute C_DIN_WIDTH : integer;
-  attribute C_DIN_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_DIN_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_DIN_WIDTH_AXIS : integer;
-  attribute C_DIN_WIDTH_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_DIN_WIDTH_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_DIN_WIDTH_RACH : integer;
-  attribute C_DIN_WIDTH_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 32;
+  attribute C_DIN_WIDTH_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 32;
   attribute C_DIN_WIDTH_RDCH : integer;
-  attribute C_DIN_WIDTH_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 64;
+  attribute C_DIN_WIDTH_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 64;
   attribute C_DIN_WIDTH_WACH : integer;
-  attribute C_DIN_WIDTH_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 32;
+  attribute C_DIN_WIDTH_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 32;
   attribute C_DIN_WIDTH_WDCH : integer;
-  attribute C_DIN_WIDTH_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 64;
+  attribute C_DIN_WIDTH_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 64;
   attribute C_DIN_WIDTH_WRCH : integer;
-  attribute C_DIN_WIDTH_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 2;
+  attribute C_DIN_WIDTH_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 2;
   attribute C_DOUT_RST_VAL : string;
-  attribute C_DOUT_RST_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "0";
+  attribute C_DOUT_RST_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "0";
   attribute C_DOUT_WIDTH : integer;
-  attribute C_DOUT_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_DOUT_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_ENABLE_RLOCS : integer;
-  attribute C_ENABLE_RLOCS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ENABLE_RLOCS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ENABLE_RST_SYNC : integer;
-  attribute C_ENABLE_RST_SYNC of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_ENABLE_RST_SYNC of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_EN_SAFETY_CKT : integer;
-  attribute C_EN_SAFETY_CKT of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_EN_SAFETY_CKT of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE : integer;
-  attribute C_ERROR_INJECTION_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_AXIS : integer;
-  attribute C_ERROR_INJECTION_TYPE_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_RDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WACH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WDCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_ERROR_INJECTION_TYPE_WRCH : integer;
-  attribute C_ERROR_INJECTION_TYPE_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_ERROR_INJECTION_TYPE_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "zynq";
+  attribute C_FAMILY of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "zynq";
   attribute C_FULL_FLAGS_RST_VAL : integer;
-  attribute C_FULL_FLAGS_RST_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_FULL_FLAGS_RST_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_ALMOST_EMPTY : integer;
-  attribute C_HAS_ALMOST_EMPTY of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_ALMOST_EMPTY of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_ALMOST_FULL : integer;
-  attribute C_HAS_ALMOST_FULL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_ALMOST_FULL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXIS_TDATA : integer;
-  attribute C_HAS_AXIS_TDATA of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXIS_TDATA of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXIS_TDEST : integer;
-  attribute C_HAS_AXIS_TDEST of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXIS_TDEST of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXIS_TID : integer;
-  attribute C_HAS_AXIS_TID of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXIS_TID of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXIS_TKEEP : integer;
-  attribute C_HAS_AXIS_TKEEP of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXIS_TKEEP of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXIS_TLAST : integer;
-  attribute C_HAS_AXIS_TLAST of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXIS_TLAST of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXIS_TREADY : integer;
-  attribute C_HAS_AXIS_TREADY of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_HAS_AXIS_TREADY of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_HAS_AXIS_TSTRB : integer;
-  attribute C_HAS_AXIS_TSTRB of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXIS_TSTRB of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXIS_TUSER : integer;
-  attribute C_HAS_AXIS_TUSER of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXIS_TUSER of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_ARUSER : integer;
-  attribute C_HAS_AXI_ARUSER of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_ARUSER of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_AWUSER : integer;
-  attribute C_HAS_AXI_AWUSER of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_AWUSER of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_BUSER : integer;
-  attribute C_HAS_AXI_BUSER of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_BUSER of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_ID : integer;
-  attribute C_HAS_AXI_ID of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_ID of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_RD_CHANNEL : integer;
-  attribute C_HAS_AXI_RD_CHANNEL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_RD_CHANNEL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_RUSER : integer;
-  attribute C_HAS_AXI_RUSER of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_RUSER of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_WR_CHANNEL : integer;
-  attribute C_HAS_AXI_WR_CHANNEL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_WR_CHANNEL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_AXI_WUSER : integer;
-  attribute C_HAS_AXI_WUSER of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_AXI_WUSER of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_BACKUP : integer;
-  attribute C_HAS_BACKUP of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_BACKUP of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_DATA_COUNT : integer;
-  attribute C_HAS_DATA_COUNT of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_DATA_COUNT of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_DATA_COUNTS_AXIS : integer;
-  attribute C_HAS_DATA_COUNTS_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_DATA_COUNTS_RACH : integer;
-  attribute C_HAS_DATA_COUNTS_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_DATA_COUNTS_RDCH : integer;
-  attribute C_HAS_DATA_COUNTS_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_DATA_COUNTS_WACH : integer;
-  attribute C_HAS_DATA_COUNTS_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_DATA_COUNTS_WDCH : integer;
-  attribute C_HAS_DATA_COUNTS_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_DATA_COUNTS_WRCH : integer;
-  attribute C_HAS_DATA_COUNTS_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_DATA_COUNTS_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_INT_CLK : integer;
-  attribute C_HAS_INT_CLK of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_INT_CLK of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_MASTER_CE : integer;
-  attribute C_HAS_MASTER_CE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_MASTER_CE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_MEMINIT_FILE : integer;
-  attribute C_HAS_MEMINIT_FILE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_MEMINIT_FILE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_OVERFLOW : integer;
-  attribute C_HAS_OVERFLOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_OVERFLOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_PROG_FLAGS_AXIS : integer;
-  attribute C_HAS_PROG_FLAGS_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_PROG_FLAGS_RACH : integer;
-  attribute C_HAS_PROG_FLAGS_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_PROG_FLAGS_RDCH : integer;
-  attribute C_HAS_PROG_FLAGS_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_PROG_FLAGS_WACH : integer;
-  attribute C_HAS_PROG_FLAGS_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_PROG_FLAGS_WDCH : integer;
-  attribute C_HAS_PROG_FLAGS_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_PROG_FLAGS_WRCH : integer;
-  attribute C_HAS_PROG_FLAGS_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_PROG_FLAGS_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_RD_DATA_COUNT : integer;
-  attribute C_HAS_RD_DATA_COUNT of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_RD_DATA_COUNT of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_RD_RST : integer;
-  attribute C_HAS_RD_RST of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_RD_RST of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_RST : integer;
-  attribute C_HAS_RST of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_HAS_RST of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_HAS_SLAVE_CE : integer;
-  attribute C_HAS_SLAVE_CE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_SLAVE_CE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_SRST : integer;
-  attribute C_HAS_SRST of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_SRST of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_UNDERFLOW : integer;
-  attribute C_HAS_UNDERFLOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_UNDERFLOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_VALID : integer;
-  attribute C_HAS_VALID of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_VALID of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_WR_ACK : integer;
-  attribute C_HAS_WR_ACK of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_WR_ACK of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_WR_DATA_COUNT : integer;
-  attribute C_HAS_WR_DATA_COUNT of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_WR_DATA_COUNT of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_HAS_WR_RST : integer;
-  attribute C_HAS_WR_RST of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_HAS_WR_RST of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_IMPLEMENTATION_TYPE : integer;
-  attribute C_IMPLEMENTATION_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_IMPLEMENTATION_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_IMPLEMENTATION_TYPE_AXIS : integer;
-  attribute C_IMPLEMENTATION_TYPE_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_RDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WACH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WDCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_IMPLEMENTATION_TYPE_WRCH : integer;
-  attribute C_IMPLEMENTATION_TYPE_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_IMPLEMENTATION_TYPE_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_INIT_WR_PNTR_VAL : integer;
-  attribute C_INIT_WR_PNTR_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_INIT_WR_PNTR_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_INTERFACE_TYPE : integer;
-  attribute C_INTERFACE_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_INTERFACE_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_MEMORY_TYPE : integer;
-  attribute C_MEMORY_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 2;
+  attribute C_MEMORY_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 2;
   attribute C_MIF_FILE_NAME : string;
-  attribute C_MIF_FILE_NAME of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "BlankString";
+  attribute C_MIF_FILE_NAME of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "BlankString";
   attribute C_MSGON_VAL : integer;
-  attribute C_MSGON_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_MSGON_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_OPTIMIZATION_MODE : integer;
-  attribute C_OPTIMIZATION_MODE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_OPTIMIZATION_MODE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_OVERFLOW_LOW : integer;
-  attribute C_OVERFLOW_LOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_OVERFLOW_LOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_POWER_SAVING_MODE : integer;
-  attribute C_POWER_SAVING_MODE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_POWER_SAVING_MODE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PRELOAD_LATENCY : integer;
-  attribute C_PRELOAD_LATENCY of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PRELOAD_LATENCY of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PRELOAD_REGS : integer;
-  attribute C_PRELOAD_REGS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_PRELOAD_REGS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_PRIM_FIFO_TYPE : string;
-  attribute C_PRIM_FIFO_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_AXIS : string;
-  attribute C_PRIM_FIFO_TYPE_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_RACH : string;
-  attribute C_PRIM_FIFO_TYPE_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_RDCH : string;
-  attribute C_PRIM_FIFO_TYPE_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_WACH : string;
-  attribute C_PRIM_FIFO_TYPE_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_WDCH : string;
-  attribute C_PRIM_FIFO_TYPE_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "512x36";
   attribute C_PRIM_FIFO_TYPE_WRCH : string;
-  attribute C_PRIM_FIFO_TYPE_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is "512x36";
+  attribute C_PRIM_FIFO_TYPE_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "512x36";
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1022;
+  attribute C_PROG_EMPTY_THRESH_ASSERT_VAL_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1022;
   attribute C_PROG_EMPTY_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 5;
+  attribute C_PROG_EMPTY_THRESH_NEGATE_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 5;
   attribute C_PROG_EMPTY_TYPE : integer;
-  attribute C_PROG_EMPTY_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_AXIS : integer;
-  attribute C_PROG_EMPTY_TYPE_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RACH : integer;
-  attribute C_PROG_EMPTY_TYPE_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_RDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WACH : integer;
-  attribute C_PROG_EMPTY_TYPE_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WDCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_EMPTY_TYPE_WRCH : integer;
-  attribute C_PROG_EMPTY_TYPE_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_EMPTY_TYPE_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 31;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 31;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1023;
   attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH : integer;
-  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1023;
+  attribute C_PROG_FULL_THRESH_ASSERT_VAL_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1023;
   attribute C_PROG_FULL_THRESH_NEGATE_VAL : integer;
-  attribute C_PROG_FULL_THRESH_NEGATE_VAL of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 30;
+  attribute C_PROG_FULL_THRESH_NEGATE_VAL of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 30;
   attribute C_PROG_FULL_TYPE : integer;
-  attribute C_PROG_FULL_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_FULL_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_FULL_TYPE_AXIS : integer;
-  attribute C_PROG_FULL_TYPE_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_FULL_TYPE_RACH : integer;
-  attribute C_PROG_FULL_TYPE_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_FULL_TYPE_RDCH : integer;
-  attribute C_PROG_FULL_TYPE_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_FULL_TYPE_WACH : integer;
-  attribute C_PROG_FULL_TYPE_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_FULL_TYPE_WDCH : integer;
-  attribute C_PROG_FULL_TYPE_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_PROG_FULL_TYPE_WRCH : integer;
-  attribute C_PROG_FULL_TYPE_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_PROG_FULL_TYPE_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_RACH_TYPE : integer;
-  attribute C_RACH_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_RACH_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_RDCH_TYPE : integer;
-  attribute C_RDCH_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_RDCH_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_RD_DATA_COUNT_WIDTH : integer;
-  attribute C_RD_DATA_COUNT_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 6;
+  attribute C_RD_DATA_COUNT_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 6;
   attribute C_RD_DEPTH : integer;
-  attribute C_RD_DEPTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 32;
+  attribute C_RD_DEPTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 32;
   attribute C_RD_FREQ : integer;
-  attribute C_RD_FREQ of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_RD_FREQ of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_RD_PNTR_WIDTH : integer;
-  attribute C_RD_PNTR_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 5;
+  attribute C_RD_PNTR_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 5;
   attribute C_REG_SLICE_MODE_AXIS : integer;
-  attribute C_REG_SLICE_MODE_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_REG_SLICE_MODE_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_REG_SLICE_MODE_RACH : integer;
-  attribute C_REG_SLICE_MODE_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_REG_SLICE_MODE_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_REG_SLICE_MODE_RDCH : integer;
-  attribute C_REG_SLICE_MODE_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_REG_SLICE_MODE_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_REG_SLICE_MODE_WACH : integer;
-  attribute C_REG_SLICE_MODE_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_REG_SLICE_MODE_WDCH : integer;
-  attribute C_REG_SLICE_MODE_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_REG_SLICE_MODE_WRCH : integer;
-  attribute C_REG_SLICE_MODE_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_REG_SLICE_MODE_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_SELECT_XPM : integer;
-  attribute C_SELECT_XPM of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_SELECT_XPM of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_SYNCHRONIZER_STAGE : integer;
-  attribute C_SYNCHRONIZER_STAGE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 3;
+  attribute C_SYNCHRONIZER_STAGE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 3;
   attribute C_UNDERFLOW_LOW : integer;
-  attribute C_UNDERFLOW_LOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_UNDERFLOW_LOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_COMMON_OVERFLOW : integer;
-  attribute C_USE_COMMON_OVERFLOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_COMMON_OVERFLOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_COMMON_UNDERFLOW : integer;
-  attribute C_USE_COMMON_UNDERFLOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_COMMON_UNDERFLOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_DEFAULT_SETTINGS : integer;
-  attribute C_USE_DEFAULT_SETTINGS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_DEFAULT_SETTINGS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_DOUT_RST : integer;
-  attribute C_USE_DOUT_RST of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_DOUT_RST of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_ECC : integer;
-  attribute C_USE_ECC of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_ECC of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_ECC_AXIS : integer;
-  attribute C_USE_ECC_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_ECC_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_ECC_RACH : integer;
-  attribute C_USE_ECC_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_ECC_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_ECC_RDCH : integer;
-  attribute C_USE_ECC_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_ECC_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_ECC_WACH : integer;
-  attribute C_USE_ECC_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_ECC_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_ECC_WDCH : integer;
-  attribute C_USE_ECC_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_ECC_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_ECC_WRCH : integer;
-  attribute C_USE_ECC_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_ECC_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_EMBEDDED_REG : integer;
-  attribute C_USE_EMBEDDED_REG of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_EMBEDDED_REG of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_FIFO16_FLAGS : integer;
-  attribute C_USE_FIFO16_FLAGS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_FIFO16_FLAGS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_USE_FWFT_DATA_COUNT : integer;
-  attribute C_USE_FWFT_DATA_COUNT of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_USE_FWFT_DATA_COUNT of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_USE_PIPELINE_REG : integer;
-  attribute C_USE_PIPELINE_REG of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_USE_PIPELINE_REG of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_VALID_LOW : integer;
-  attribute C_VALID_LOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_VALID_LOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_WACH_TYPE : integer;
-  attribute C_WACH_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_WACH_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_WDCH_TYPE : integer;
-  attribute C_WDCH_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_WDCH_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_WRCH_TYPE : integer;
-  attribute C_WRCH_TYPE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_WRCH_TYPE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_WR_ACK_LOW : integer;
-  attribute C_WR_ACK_LOW of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 0;
+  attribute C_WR_ACK_LOW of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 0;
   attribute C_WR_DATA_COUNT_WIDTH : integer;
-  attribute C_WR_DATA_COUNT_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 6;
+  attribute C_WR_DATA_COUNT_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 6;
   attribute C_WR_DEPTH : integer;
-  attribute C_WR_DEPTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 32;
+  attribute C_WR_DEPTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 32;
   attribute C_WR_DEPTH_AXIS : integer;
-  attribute C_WR_DEPTH_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1024;
+  attribute C_WR_DEPTH_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1024;
   attribute C_WR_DEPTH_RACH : integer;
-  attribute C_WR_DEPTH_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 16;
+  attribute C_WR_DEPTH_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 16;
   attribute C_WR_DEPTH_RDCH : integer;
-  attribute C_WR_DEPTH_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1024;
+  attribute C_WR_DEPTH_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1024;
   attribute C_WR_DEPTH_WACH : integer;
-  attribute C_WR_DEPTH_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 16;
+  attribute C_WR_DEPTH_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 16;
   attribute C_WR_DEPTH_WDCH : integer;
-  attribute C_WR_DEPTH_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1024;
+  attribute C_WR_DEPTH_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1024;
   attribute C_WR_DEPTH_WRCH : integer;
-  attribute C_WR_DEPTH_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 16;
+  attribute C_WR_DEPTH_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 16;
   attribute C_WR_FREQ : integer;
-  attribute C_WR_FREQ of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
+  attribute C_WR_FREQ of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
   attribute C_WR_PNTR_WIDTH : integer;
-  attribute C_WR_PNTR_WIDTH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 5;
+  attribute C_WR_PNTR_WIDTH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 5;
   attribute C_WR_PNTR_WIDTH_AXIS : integer;
-  attribute C_WR_PNTR_WIDTH_AXIS of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_AXIS of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 10;
   attribute C_WR_PNTR_WIDTH_RACH : integer;
-  attribute C_WR_PNTR_WIDTH_RACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_RACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_WR_PNTR_WIDTH_RDCH : integer;
-  attribute C_WR_PNTR_WIDTH_RDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_RDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 10;
   attribute C_WR_PNTR_WIDTH_WACH : integer;
-  attribute C_WR_PNTR_WIDTH_WACH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WACH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_WR_PNTR_WIDTH_WDCH : integer;
-  attribute C_WR_PNTR_WIDTH_WDCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 10;
+  attribute C_WR_PNTR_WIDTH_WDCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 10;
   attribute C_WR_PNTR_WIDTH_WRCH : integer;
-  attribute C_WR_PNTR_WIDTH_WRCH of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 4;
+  attribute C_WR_PNTR_WIDTH_WRCH of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 4;
   attribute C_WR_RESPONSE_LATENCY : integer;
-  attribute C_WR_RESPONSE_LATENCY of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ : entity is 1;
-end \linux_bd_auto_pc_0_fifo_generator_v13_1_0\;
+  attribute C_WR_RESPONSE_LATENCY of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is 1;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_fifo_generator_v13_1_1 : entity is "fifo_generator_v13_1_1";
+end linux_bd_auto_pc_0_fifo_generator_v13_1_1;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_fifo_generator_v13_1_0\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_fifo_generator_v13_1_1 is
   signal \<const0>\ : STD_LOGIC;
   signal \<const1>\ : STD_LOGIC;
 begin
@@ -2671,7 +2699,7 @@ VCC: unisim.vcomponents.VCC
      port map (
       P => \<const1>\
     );
-inst_fifo_gen: entity work.\linux_bd_auto_pc_0_fifo_generator_v13_1_0_synth\
+inst_fifo_gen: entity work.linux_bd_auto_pc_0_fifo_generator_v13_1_1_synth
      port map (
       clk => clk,
       din(0) => din(0),
@@ -2687,7 +2715,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_fifo_gen\ is
+entity linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_fifo_gen is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     din : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -2735,9 +2763,11 @@ entity \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_fifo_gen\ is
     \S_AXI_AID_Q_reg[0]_0\ : in STD_LOGIC;
     cmd_empty_reg : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_fifo_gen\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_fifo_gen : entity is "axi_data_fifo_v2_1_8_fifo_gen";
+end linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_fifo_gen;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_fifo_gen\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_fifo_gen is
   signal \^sr\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal S_AXI_AREADY_I_i_3_n_0 : STD_LOGIC;
   signal S_AXI_AREADY_I_i_4_n_0 : STD_LOGIC;
@@ -3454,7 +3484,7 @@ command_ongoing_i_1: unisim.vcomponents.LUT6
       I5 => command_ongoing,
       O => command_ongoing_reg
     );
-fifo_gen_inst: entity work.\linux_bd_auto_pc_0_fifo_generator_v13_1_0\
+fifo_gen_inst: entity work.linux_bd_auto_pc_0_fifo_generator_v13_1_1
      port map (
       almost_empty => NLW_fifo_gen_inst_almost_empty_UNCONNECTED,
       almost_full => NLW_fifo_gen_inst_almost_full_UNCONNECTED,
@@ -3845,7 +3875,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_axic_fifo\ is
+entity linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_axic_fifo is
   port (
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
     din : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -3893,11 +3923,13 @@ entity \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_axic_fifo\ is
     \S_AXI_AID_Q_reg[0]_0\ : in STD_LOGIC;
     cmd_empty_reg : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_axic_fifo\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_axic_fifo : entity is "axi_data_fifo_v2_1_8_axic_fifo";
+end linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_axic_fifo;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_axic_fifo\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_axic_fifo is
 begin
-inst: entity work.\linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_fifo_gen\
+inst: entity work.linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_fifo_gen
      port map (
       D(4 downto 0) => D(4 downto 0),
       E(0) => E(0),
@@ -3950,7 +3982,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_a_axi3_conv\ is
+entity linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_a_axi3_conv is
   port (
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     M_AXI_ARID : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -3983,9 +4015,11 @@ entity \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_a_axi3_conv\ is
     aresetn : in STD_LOGIC;
     s_axi_arvalid : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_a_axi3_conv\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_a_axi3_conv : entity is "axi_protocol_converter_v2_1_9_a_axi3_conv";
+end linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_a_axi3_conv;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_a_axi3_conv\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_a_axi3_conv is
   signal \^e\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^m_axi_arid\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal S_AXI_AADDR_Q : STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -4633,7 +4667,7 @@ S_AXI_AREADY_I_reg: unisim.vcomponents.FDRE
       Q => m_axi_arsize(2),
       R => \USE_R_CHANNEL.cmd_queue_n_0\
     );
-\USE_R_CHANNEL.cmd_queue\: entity work.\linux_bd_auto_pc_0_axi_data_fifo_v2_1_7_axic_fifo\
+\USE_R_CHANNEL.cmd_queue\: entity work.linux_bd_auto_pc_0_axi_data_fifo_v2_1_8_axic_fifo
      port map (
       D(4) => \USE_R_CHANNEL.cmd_queue_n_4\,
       D(3) => \USE_R_CHANNEL.cmd_queue_n_5\,
@@ -6894,7 +6928,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi3_conv\ is
+entity linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi3_conv is
   port (
     s_axi_arready : out STD_LOGIC;
     M_AXI_ARID : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -6927,11 +6961,13 @@ entity \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi3_conv\ is
     aresetn : in STD_LOGIC;
     s_axi_arvalid : in STD_LOGIC
   );
-end \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi3_conv\;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi3_conv : entity is "axi_protocol_converter_v2_1_9_axi3_conv";
+end linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi3_conv;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi3_conv\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi3_conv is
 begin
-\USE_READ.USE_SPLIT_R.read_addr_inst\: entity work.\linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_a_axi3_conv\
+\USE_READ.USE_SPLIT_R.read_addr_inst\: entity work.linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_a_axi3_conv
      port map (
       E(0) => s_axi_arready,
       M_AXI_ARID(0) => M_AXI_ARID(0),
@@ -6969,7 +7005,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ is
+entity linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -7065,60 +7101,62 @@ entity \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\
     m_axi_rready : out STD_LOGIC
   );
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 32;
+  attribute C_AXI_ADDR_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 32;
   attribute C_AXI_ARUSER_WIDTH : integer;
-  attribute C_AXI_ARUSER_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_AXI_ARUSER_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
-  attribute C_AXI_AWUSER_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_AXI_AWUSER_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_AXI_BUSER_WIDTH : integer;
-  attribute C_AXI_BUSER_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_AXI_BUSER_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 64;
+  attribute C_AXI_DATA_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 64;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_AXI_ID_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_AXI_RUSER_WIDTH : integer;
-  attribute C_AXI_RUSER_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_AXI_RUSER_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_AXI_SUPPORTS_READ : integer;
-  attribute C_AXI_SUPPORTS_READ of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_AXI_SUPPORTS_READ of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_AXI_SUPPORTS_USER_SIGNALS : integer;
-  attribute C_AXI_SUPPORTS_USER_SIGNALS of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 0;
+  attribute C_AXI_SUPPORTS_USER_SIGNALS of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 0;
   attribute C_AXI_SUPPORTS_WRITE : integer;
-  attribute C_AXI_SUPPORTS_WRITE of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 0;
+  attribute C_AXI_SUPPORTS_WRITE of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 0;
   attribute C_AXI_WUSER_WIDTH : integer;
-  attribute C_AXI_WUSER_WIDTH of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_AXI_WUSER_WIDTH of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is "zynq";
+  attribute C_FAMILY of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is "zynq";
   attribute C_IGNORE_ID : integer;
-  attribute C_IGNORE_ID of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_IGNORE_ID of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_M_AXI_PROTOCOL : integer;
-  attribute C_M_AXI_PROTOCOL of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute C_M_AXI_PROTOCOL of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute C_S_AXI_PROTOCOL : integer;
-  attribute C_S_AXI_PROTOCOL of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 0;
+  attribute C_S_AXI_PROTOCOL of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 0;
   attribute C_TRANSLATION_MODE : integer;
-  attribute C_TRANSLATION_MODE of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 2;
+  attribute C_TRANSLATION_MODE of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 2;
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is "axi_protocol_converter_v2_1_9_axi_protocol_converter";
   attribute P_AXI3 : integer;
-  attribute P_AXI3 of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute P_AXI3 of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute P_AXI4 : integer;
-  attribute P_AXI4 of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 0;
+  attribute P_AXI4 of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 0;
   attribute P_AXILITE : integer;
-  attribute P_AXILITE of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 2;
+  attribute P_AXILITE of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 2;
   attribute P_AXILITE_SIZE : string;
-  attribute P_AXILITE_SIZE of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is "3'b011";
+  attribute P_AXILITE_SIZE of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is "3'b011";
   attribute P_CONVERSION : integer;
-  attribute P_CONVERSION of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 2;
+  attribute P_CONVERSION of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 2;
   attribute P_DECERR : string;
-  attribute P_DECERR of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is "2'b11";
+  attribute P_DECERR of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is "2'b11";
   attribute P_INCR : string;
-  attribute P_INCR of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is "2'b01";
+  attribute P_INCR of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is "2'b01";
   attribute P_PROTECTION : integer;
-  attribute P_PROTECTION of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is 1;
+  attribute P_PROTECTION of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is 1;
   attribute P_SLVERR : string;
-  attribute P_SLVERR of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ : entity is "2'b10";
-end \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\;
+  attribute P_SLVERR of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter : entity is "2'b10";
+end linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\ is
+architecture STRUCTURE of linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter is
   signal \<const0>\ : STD_LOGIC;
   signal \^m_axi_arlock\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^m_axi_rdata\ : STD_LOGIC_VECTOR ( 63 downto 0 );
@@ -7290,7 +7328,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-\gen_axi4_axi3.axi3_conv_inst\: entity work.\linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi3_conv\
+\gen_axi4_axi3.axi3_conv_inst\: entity work.linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi3_conv
      port map (
       M_AXI_ARID(0) => m_axi_arid(0),
       aclk => aclk,
@@ -7328,7 +7366,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_auto_pc_0\ is
+entity linux_bd_auto_pc_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -7365,16 +7403,16 @@ entity \linux_bd_auto_pc_0\ is
     m_axi_rready : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of \linux_bd_auto_pc_0\ : entity is true;
+  attribute NotValidForBitStream of linux_bd_auto_pc_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of \linux_bd_auto_pc_0\ : entity is "linux_bd_auto_pc_0,axi_protocol_converter_v2_1_8_axi_protocol_converter,{}";
+  attribute CHECK_LICENSE_TYPE of linux_bd_auto_pc_0 : entity is "linux_bd_auto_pc_0,axi_protocol_converter_v2_1_9_axi_protocol_converter,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of \linux_bd_auto_pc_0\ : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of linux_bd_auto_pc_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of \linux_bd_auto_pc_0\ : entity is "axi_protocol_converter_v2_1_8_axi_protocol_converter,Vivado 2016.1";
-end \linux_bd_auto_pc_0\;
+  attribute X_CORE_INFO of linux_bd_auto_pc_0 : entity is "axi_protocol_converter_v2_1_9_axi_protocol_converter,Vivado 2016.2";
+end linux_bd_auto_pc_0;
 
-architecture STRUCTURE of \linux_bd_auto_pc_0\ is
+architecture STRUCTURE of linux_bd_auto_pc_0 is
   signal NLW_inst_m_axi_awvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_m_axi_bready_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_m_axi_wlast_UNCONNECTED : STD_LOGIC;
@@ -7457,7 +7495,7 @@ architecture STRUCTURE of \linux_bd_auto_pc_0\ is
   attribute P_SLVERR of inst : label is "2'b10";
   attribute downgradeipidentifiedwarnings of inst : label is "yes";
 begin
-inst: entity work.\linux_bd_auto_pc_0_axi_protocol_converter_v2_1_8_axi_protocol_converter\
+inst: entity work.linux_bd_auto_pc_0_axi_protocol_converter_v2_1_9_axi_protocol_converter
      port map (
       aclk => aclk,
       aresetn => aresetn,

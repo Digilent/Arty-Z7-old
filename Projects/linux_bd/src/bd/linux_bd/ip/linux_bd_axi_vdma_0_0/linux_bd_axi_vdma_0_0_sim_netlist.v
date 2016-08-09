@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-// Date        : Tue Aug 09 00:38:16 2016
+// Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+// Date        : Tue Aug 09 01:02:56 2016
 // Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
 //               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_axi_vdma_0_0/linux_bd_axi_vdma_0_0_sim_netlist.v
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "linux_bd_axi_vdma_0_0,axi_vdma,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_vdma,Vivado 2016.1" *) 
+(* CHECK_LICENSE_TYPE = "linux_bd_axi_vdma_0_0,axi_vdma,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "axi_vdma,Vivado 2016.2" *) 
 (* NotValidForBitStream *)
 module linux_bd_axi_vdma_0_0
    (s_axi_lite_aclk,
@@ -7712,7 +7712,7 @@ module linux_bd_axi_vdma_0_0_axi_vdma_afifo_builtin
   wire s_axis_fifo_ainit_nosync_reg;
   wire sig_m_valid_out_reg;
 
-  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0 fg_builtin_fifo_inst
+  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1 fg_builtin_fifo_inst
        (.DIN(DIN),
         .dm2linebuf_mm2s_tdata(dm2linebuf_mm2s_tdata),
         .fifo_dout(fifo_dout),
@@ -9477,8 +9477,10 @@ module linux_bd_axi_vdma_0_0_axi_vdma_lite_if
   wire \axi2ip_rdaddr_captured_reg_n_0_[5] ;
   wire \axi2ip_rdaddr_captured_reg_n_0_[6] ;
   wire \axi2ip_rdaddr_captured_reg_n_0_[7] ;
+  (* async_reg = "true" *) wire [7:2]axi2ip_rdaddr_captured_s2mm_cdc_tig;
   wire [7:2]axi2ip_wraddr_captured;
   (* async_reg = "true" *) wire [7:2]axi2ip_wraddr_captured_mm2s_cdc_tig;
+  (* async_reg = "true" *) wire [7:2]axi2ip_wraddr_captured_s2mm_cdc_tig;
   wire bvalid_out_i_i_1_n_0;
   wire different_delay;
   wire different_thresh;
@@ -9494,6 +9496,7 @@ module linux_bd_axi_vdma_0_0_axi_vdma_lite_if
   wire ioc_irq_reg_0;
   wire [30:0]ip2axi_rddata_captured;
   (* async_reg = "true" *) wire [31:0]ip2axi_rddata_captured_mm2s_cdc_tig;
+  (* async_reg = "true" *) wire [31:0]ip2axi_rddata_captured_s2mm_cdc_tig;
   wire ip2axi_rddata_int_inferred_i_33_n_0;
   wire ip2axi_rddata_int_inferred_i_34_n_0;
   wire ip2axi_rddata_int_inferred_i_35_n_0;
@@ -9555,6 +9558,7 @@ module linux_bd_axi_vdma_0_0_axi_vdma_lite_if
   wire prmtr_updt_complete_i_reg;
   wire read_has_started_i;
   wire read_has_started_i_i_1_n_0;
+  (* async_reg = "true" *) wire [31:0]s2mm_axi2ip_wrdata_cdc_tig;
   wire s_axi_lite_aclk;
   wire [5:0]s_axi_lite_araddr;
   wire s_axi_lite_arready;
@@ -11553,6 +11557,386 @@ module linux_bd_axi_vdma_0_0_axi_vdma_lite_if
        (.I0(axi2ip_wraddr_captured_mm2s_cdc_tig[6]),
         .I1(axi2ip_wraddr_captured_mm2s_cdc_tig[5]),
         .O(\dmacr_i[1]_i_2_n_0 ));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_0
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_1
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_10
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_11
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_12
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_13
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_14
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_15
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_16
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_17
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_18
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_19
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_2
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_20
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_21
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_22
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_23
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_24
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_25
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_26
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_27
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_28
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_29
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_3
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_30
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_31
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_32
+       (.I0(1'b0),
+        .O(axi2ip_rdaddr_captured_s2mm_cdc_tig[7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_33
+       (.I0(1'b0),
+        .O(axi2ip_rdaddr_captured_s2mm_cdc_tig[6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_34
+       (.I0(1'b0),
+        .O(axi2ip_rdaddr_captured_s2mm_cdc_tig[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_35
+       (.I0(1'b0),
+        .O(axi2ip_rdaddr_captured_s2mm_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_36
+       (.I0(1'b0),
+        .O(axi2ip_rdaddr_captured_s2mm_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_37
+       (.I0(1'b0),
+        .O(axi2ip_rdaddr_captured_s2mm_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_38
+       (.I0(1'b0),
+        .O(axi2ip_wraddr_captured_s2mm_cdc_tig[7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_39
+       (.I0(1'b0),
+        .O(axi2ip_wraddr_captured_s2mm_cdc_tig[6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_4
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_40
+       (.I0(1'b0),
+        .O(axi2ip_wraddr_captured_s2mm_cdc_tig[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_41
+       (.I0(1'b0),
+        .O(axi2ip_wraddr_captured_s2mm_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_42
+       (.I0(1'b0),
+        .O(axi2ip_wraddr_captured_s2mm_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_43
+       (.I0(1'b0),
+        .O(axi2ip_wraddr_captured_s2mm_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_44
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[31]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_45
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[30]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_46
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[29]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_47
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[28]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_48
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[27]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_49
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_5
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[26]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_50
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_51
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_52
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_53
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[22]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_54
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[21]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_55
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[20]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_56
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[19]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_57
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[18]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_58
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[17]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_59
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[16]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_6
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[25]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_60
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_61
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_62
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_63
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_64
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_65
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_66
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_67
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_68
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_69
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_7
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[24]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_70
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_71
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_72
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_73
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_74
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_75
+       (.I0(1'b0),
+        .O(s2mm_axi2ip_wrdata_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_8
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[23]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_9
+       (.I0(1'b0),
+        .O(ip2axi_rddata_captured_s2mm_cdc_tig[22]));
   LUT5 #(
     .INIT(32'h00004540)) 
     ip2axi_rddata_int_inferred_i_1
@@ -14532,6 +14916,12 @@ module linux_bd_axi_vdma_0_0_axi_vdma_reg_if
   wire prmry_reset2;
   wire prmry_resetn_i_reg;
   wire prmtr_updt_complete_i_reg;
+  (* async_reg = "true" *) wire [12:0]s2mm_capture_dm_done_vsize_counter_cdc_tig;
+  (* async_reg = "true" *) wire [15:0]s2mm_capture_hsize_at_uf_err_cdc_tig;
+  (* async_reg = "true" *) wire [4:0]s2mm_chnl_current_frame_cdc_tig;
+  (* async_reg = "true" *) wire [4:0]s2mm_genlock_pair_frame_cdc_tig;
+  (* async_reg = "true" *) wire [4:0]s2mm_ip2axi_frame_ptr_ref_cdc_tig;
+  (* async_reg = "true" *) wire [4:0]s2mm_ip2axi_frame_store_cdc_tig;
   wire s_axi_lite_aclk;
   wire [5:0]s_axi_lite_araddr;
   wire s_axi_lite_arready;
@@ -14822,6 +15212,251 @@ module linux_bd_axi_vdma_0_0_axi_vdma_reg_if
         .D(\MM2S_ERR_FOR_IRQ.frm_store_i_reg[4] [4]),
         .Q(mm2s_ip2axi_frame_store_cdc_tig[4]),
         .R(1'b0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_0
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_ptr_ref_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_1
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_ptr_ref_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_10
+       (.I0(1'b0),
+        .O(s2mm_chnl_current_frame_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_11
+       (.I0(1'b0),
+        .O(s2mm_chnl_current_frame_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_12
+       (.I0(1'b0),
+        .O(s2mm_chnl_current_frame_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_13
+       (.I0(1'b0),
+        .O(s2mm_chnl_current_frame_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_14
+       (.I0(1'b0),
+        .O(s2mm_chnl_current_frame_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_15
+       (.I0(1'b0),
+        .O(s2mm_genlock_pair_frame_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_16
+       (.I0(1'b0),
+        .O(s2mm_genlock_pair_frame_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_17
+       (.I0(1'b0),
+        .O(s2mm_genlock_pair_frame_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_18
+       (.I0(1'b0),
+        .O(s2mm_genlock_pair_frame_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_19
+       (.I0(1'b0),
+        .O(s2mm_genlock_pair_frame_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_2
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_ptr_ref_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_20
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[15]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_21
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[14]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_22
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[13]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_23
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_24
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_25
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_26
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_27
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_28
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_29
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_3
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_ptr_ref_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_30
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_31
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_32
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_33
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_34
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_35
+       (.I0(1'b0),
+        .O(s2mm_capture_hsize_at_uf_err_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_36
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[12]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_37
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[11]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_38
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[10]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_39
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[9]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_4
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_ptr_ref_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_40
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_41
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[7]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_42
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[6]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_43
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_44
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_45
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_46
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_47
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_48
+       (.I0(1'b0),
+        .O(s2mm_capture_dm_done_vsize_counter_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_5
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_store_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_6
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_store_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_7
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_store_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_8
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_store_cdc_tig[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_9
+       (.I0(1'b0),
+        .O(s2mm_ip2axi_frame_store_cdc_tig[0]));
 endmodule
 
 (* ORIG_REF_NAME = "axi_vdma_reg_module" *) 
@@ -21053,6 +21688,8 @@ module linux_bd_axi_vdma_0_0_axi_vdma_vid_cdc
   wire m_axis_mm2s_aclk;
   wire [5:0]mm2s_frame_ptr_in;
   wire [5:0]mm2s_frame_ptr_out;
+  (* async_reg = "true" *) wire [5:0]othrchnl_frame_ptr_in_d1_cdc_tig;
+  (* async_reg = "true" *) wire [5:0]othrchnl_frame_ptr_in_d2;
   wire p_15_out;
   wire p_17_out;
   wire [5:0]p_2_in;
@@ -21355,6 +21992,66 @@ module linux_bd_axi_vdma_0_0_axi_vdma_vid_cdc
         .D(frame_ptr_out_d1_cdc_tig[5]),
         .Q(frame_ptr_out_d2[5]),
         .R(1'b0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_10
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d1_cdc_tig[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_11
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d2[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_12
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d2[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_13
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d2[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_14
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d2[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_15
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d2[1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_16
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d2[0]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_5
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d1_cdc_tig[5]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_6
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d1_cdc_tig[4]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_7
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d1_cdc_tig[3]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_8
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d1_cdc_tig[2]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    i_9
+       (.I0(1'b0),
+        .O(othrchnl_frame_ptr_in_d1_cdc_tig[1]));
 endmodule
 
 (* ORIG_REF_NAME = "axi_vdma_vidreg_module" *) 
@@ -28469,7 +29166,7 @@ module linux_bd_axi_vdma_0_0_sync_fifo_fg
   wire [0:0]\sig_user_skid_reg_reg[0] ;
   wire [0:0]sig_wrcnt_mblen_slice__0;
 
-  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0 \FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM 
+  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1__parameterized0 \FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM 
        (.D(D),
         .DI(DI),
         .DIBDI(DIBDI),
@@ -29339,8 +30036,8 @@ module linux_bd_axi_vdma_0_0_blk_mem_gen_top
         .\sig_user_skid_reg_reg[0] (\sig_user_skid_reg_reg[0] ));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_2" *) 
-module linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2
+(* ORIG_REF_NAME = "blk_mem_gen_v8_3_3" *) 
+module linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3
    (DOBDO,
     \sig_user_skid_reg_reg[0] ,
     dm2linebuf_mm2s_tdata,
@@ -29403,7 +30100,7 @@ module linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2
   wire sig_stream_rst;
   wire [0:0]\sig_user_skid_reg_reg[0] ;
 
-  linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth inst_blk_mem_gen
+  linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3_synth inst_blk_mem_gen
        (.DIBDI(DIBDI),
         .DOBDO(DOBDO),
         .\INCLUDE_UNPACKING.lsig_cmd_loaded_reg (\INCLUDE_UNPACKING.lsig_cmd_loaded_reg ),
@@ -29426,8 +30123,8 @@ module linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2
         .\sig_user_skid_reg_reg[0] (\sig_user_skid_reg_reg[0] ));
 endmodule
 
-(* ORIG_REF_NAME = "blk_mem_gen_v8_3_2_synth" *) 
-module linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth
+(* ORIG_REF_NAME = "blk_mem_gen_v8_3_3_synth" *) 
+module linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3_synth
    (DOBDO,
     \sig_user_skid_reg_reg[0] ,
     dm2linebuf_mm2s_tdata,
@@ -30761,7 +31458,7 @@ module linux_bd_axi_vdma_0_0_fifo_generator_top
   wire s_axis_fifo_ainit_nosync_reg;
   wire sig_m_valid_out_reg;
 
-  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin \gbi.bi 
+  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_builtin \gbi.bi 
        (.DIN(DIN),
         .dm2linebuf_mm2s_tdata(dm2linebuf_mm2s_tdata),
         .fifo_dout(fifo_dout),
@@ -30905,8 +31602,8 @@ module linux_bd_axi_vdma_0_0_fifo_generator_top__parameterized0
         .sig_wrcnt_mblen_slice__0(sig_wrcnt_mblen_slice__0));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_0" *) 
-module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0
+(* ORIG_REF_NAME = "fifo_generator_v13_1_1" *) 
+module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1
    (fifo_full_i,
     sig_m_valid_out_reg,
     fifo_dout,
@@ -30939,7 +31636,7 @@ module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0
   wire s_axis_fifo_ainit_nosync_reg;
   wire sig_m_valid_out_reg;
 
-  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth inst_fifo_gen
+  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth inst_fifo_gen
        (.DIN(DIN),
         .dm2linebuf_mm2s_tdata(dm2linebuf_mm2s_tdata),
         .fifo_dout(fifo_dout),
@@ -30952,8 +31649,8 @@ module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0
         .sig_m_valid_out_reg(sig_m_valid_out_reg));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_0" *) 
-module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0
+(* ORIG_REF_NAME = "fifo_generator_v13_1_1" *) 
+module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1__parameterized0
    (DOBDO,
     sig_wrcnt_mblen_slice__0,
     \sig_user_skid_reg_reg[0] ,
@@ -31049,7 +31746,7 @@ module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0
   wire [0:0]\sig_user_skid_reg_reg[0] ;
   wire [0:0]sig_wrcnt_mblen_slice__0;
 
-  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0 inst_fifo_gen
+  linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth__parameterized0 inst_fifo_gen
        (.D(D),
         .DI(DI),
         .DIBDI(DIBDI),
@@ -31083,8 +31780,8 @@ module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0
         .sig_wrcnt_mblen_slice__0(sig_wrcnt_mblen_slice__0));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_0_builtin" *) 
-module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin
+(* ORIG_REF_NAME = "fifo_generator_v13_1_1_builtin" *) 
+module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_builtin
    (fifo_full_i,
     sig_m_valid_out_reg,
     fifo_dout,
@@ -31136,8 +31833,8 @@ module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin
         .sig_m_valid_out_reg(sig_m_valid_out_reg));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_0_synth" *) 
-module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth
+(* ORIG_REF_NAME = "fifo_generator_v13_1_1_synth" *) 
+module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth
    (fifo_full_i,
     sig_m_valid_out_reg,
     fifo_dout,
@@ -31183,8 +31880,8 @@ module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth
         .sig_m_valid_out_reg(sig_m_valid_out_reg));
 endmodule
 
-(* ORIG_REF_NAME = "fifo_generator_v13_1_0_synth" *) 
-module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0
+(* ORIG_REF_NAME = "fifo_generator_v13_1_1_synth" *) 
+module linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth__parameterized0
    (DOBDO,
     sig_wrcnt_mblen_slice__0,
     \sig_user_skid_reg_reg[0] ,
@@ -31378,7 +32075,7 @@ module linux_bd_axi_vdma_0_0_memory
   wire sig_stream_rst;
   wire [0:0]\sig_user_skid_reg_reg[0] ;
 
-  linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2 \gbm.gbmg.gbmgb.ngecc.bmg 
+  linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3 \gbm.gbmg.gbmgb.ngecc.bmg 
        (.DIBDI(DIBDI),
         .DOBDO(DOBDO),
         .\INCLUDE_UNPACKING.lsig_cmd_loaded_reg (\INCLUDE_UNPACKING.lsig_cmd_loaded_reg ),

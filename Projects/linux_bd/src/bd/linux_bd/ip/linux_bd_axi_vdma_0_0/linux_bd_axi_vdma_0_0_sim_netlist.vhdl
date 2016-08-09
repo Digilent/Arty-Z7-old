@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:38:16 2016
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Tue Aug 09 01:02:56 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_axi_vdma_0_0/linux_bd_axi_vdma_0_0_sim_netlist.vhdl
@@ -22786,14 +22786,20 @@ architecture STRUCTURE of linux_bd_axi_vdma_0_0_axi_vdma_lite_if is
   signal \axi2ip_rdaddr_captured_reg_n_0_[5]\ : STD_LOGIC;
   signal \axi2ip_rdaddr_captured_reg_n_0_[6]\ : STD_LOGIC;
   signal \axi2ip_rdaddr_captured_reg_n_0_[7]\ : STD_LOGIC;
+  signal axi2ip_rdaddr_captured_s2mm_cdc_tig : STD_LOGIC_VECTOR ( 7 downto 2 );
+  attribute async_reg of axi2ip_rdaddr_captured_s2mm_cdc_tig : signal is "true";
   signal axi2ip_wraddr_captured : STD_LOGIC_VECTOR ( 7 downto 2 );
   signal axi2ip_wraddr_captured_mm2s_cdc_tig : STD_LOGIC_VECTOR ( 7 downto 2 );
   attribute async_reg of axi2ip_wraddr_captured_mm2s_cdc_tig : signal is "true";
+  signal axi2ip_wraddr_captured_s2mm_cdc_tig : STD_LOGIC_VECTOR ( 7 downto 2 );
+  attribute async_reg of axi2ip_wraddr_captured_s2mm_cdc_tig : signal is "true";
   signal bvalid_out_i_i_1_n_0 : STD_LOGIC;
   signal \dmacr_i[1]_i_2_n_0\ : STD_LOGIC;
   signal ip2axi_rddata_captured : STD_LOGIC_VECTOR ( 30 downto 0 );
   signal ip2axi_rddata_captured_mm2s_cdc_tig : STD_LOGIC_VECTOR ( 31 downto 0 );
   attribute async_reg of ip2axi_rddata_captured_mm2s_cdc_tig : signal is "true";
+  signal ip2axi_rddata_captured_s2mm_cdc_tig : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute async_reg of ip2axi_rddata_captured_s2mm_cdc_tig : signal is "true";
   signal ip2axi_rddata_int_inferred_i_33_n_0 : STD_LOGIC;
   signal ip2axi_rddata_int_inferred_i_34_n_0 : STD_LOGIC;
   signal ip2axi_rddata_int_inferred_i_35_n_0 : STD_LOGIC;
@@ -22847,6 +22853,8 @@ architecture STRUCTURE of linux_bd_axi_vdma_0_0_axi_vdma_lite_if is
   signal prepare_wrce_pulse_lite_d6 : STD_LOGIC;
   signal read_has_started_i : STD_LOGIC;
   signal read_has_started_i_i_1_n_0 : STD_LOGIC;
+  signal s2mm_axi2ip_wrdata_cdc_tig : STD_LOGIC_VECTOR ( 31 downto 0 );
+  attribute async_reg of s2mm_axi2ip_wrdata_cdc_tig : signal is "true";
   signal \^s_axi_lite_arready\ : STD_LOGIC;
   signal \^s_axi_lite_awready\ : STD_LOGIC;
   signal \^s_axi_lite_bvalid\ : STD_LOGIC;
@@ -25498,6 +25506,614 @@ bvalid_out_i_reg: unisim.vcomponents.FDRE
       I1 => axi2ip_wraddr_captured_mm2s_cdc_tig(5),
       O => \dmacr_i[1]_i_2_n_0\
     );
+i_0: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(31)
+    );
+i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(30)
+    );
+i_10: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(21)
+    );
+i_11: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(20)
+    );
+i_12: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(19)
+    );
+i_13: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(18)
+    );
+i_14: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(17)
+    );
+i_15: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(16)
+    );
+i_16: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(15)
+    );
+i_17: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(14)
+    );
+i_18: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(13)
+    );
+i_19: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(12)
+    );
+i_2: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(29)
+    );
+i_20: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(11)
+    );
+i_21: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(10)
+    );
+i_22: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(9)
+    );
+i_23: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(8)
+    );
+i_24: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(7)
+    );
+i_25: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(6)
+    );
+i_26: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(5)
+    );
+i_27: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(4)
+    );
+i_28: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(3)
+    );
+i_29: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(2)
+    );
+i_3: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(28)
+    );
+i_30: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(1)
+    );
+i_31: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(0)
+    );
+i_32: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_rdaddr_captured_s2mm_cdc_tig(7)
+    );
+i_33: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_rdaddr_captured_s2mm_cdc_tig(6)
+    );
+i_34: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_rdaddr_captured_s2mm_cdc_tig(5)
+    );
+i_35: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_rdaddr_captured_s2mm_cdc_tig(4)
+    );
+i_36: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_rdaddr_captured_s2mm_cdc_tig(3)
+    );
+i_37: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_rdaddr_captured_s2mm_cdc_tig(2)
+    );
+i_38: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_wraddr_captured_s2mm_cdc_tig(7)
+    );
+i_39: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_wraddr_captured_s2mm_cdc_tig(6)
+    );
+i_4: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(27)
+    );
+i_40: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_wraddr_captured_s2mm_cdc_tig(5)
+    );
+i_41: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_wraddr_captured_s2mm_cdc_tig(4)
+    );
+i_42: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_wraddr_captured_s2mm_cdc_tig(3)
+    );
+i_43: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => axi2ip_wraddr_captured_s2mm_cdc_tig(2)
+    );
+i_44: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(31)
+    );
+i_45: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(30)
+    );
+i_46: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(29)
+    );
+i_47: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(28)
+    );
+i_48: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(27)
+    );
+i_49: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(26)
+    );
+i_5: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(26)
+    );
+i_50: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(25)
+    );
+i_51: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(24)
+    );
+i_52: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(23)
+    );
+i_53: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(22)
+    );
+i_54: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(21)
+    );
+i_55: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(20)
+    );
+i_56: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(19)
+    );
+i_57: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(18)
+    );
+i_58: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(17)
+    );
+i_59: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(16)
+    );
+i_6: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(25)
+    );
+i_60: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(15)
+    );
+i_61: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(14)
+    );
+i_62: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(13)
+    );
+i_63: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(12)
+    );
+i_64: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(11)
+    );
+i_65: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(10)
+    );
+i_66: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(9)
+    );
+i_67: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(8)
+    );
+i_68: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(7)
+    );
+i_69: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(6)
+    );
+i_7: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(24)
+    );
+i_70: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(5)
+    );
+i_71: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(4)
+    );
+i_72: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(3)
+    );
+i_73: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(2)
+    );
+i_74: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(1)
+    );
+i_75: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_axi2ip_wrdata_cdc_tig(0)
+    );
+i_8: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(23)
+    );
+i_9: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => ip2axi_rddata_captured_s2mm_cdc_tig(22)
+    );
 ip2axi_rddata_int_inferred_i_1: unisim.vcomponents.LUT5
     generic map(
       INIT => X"00004540"
@@ -27999,6 +28615,10 @@ architecture STRUCTURE of linux_bd_axi_vdma_0_0_axi_vdma_vid_cdc is
   attribute async_reg of frame_ptr_out_d1_cdc_tig : signal is "true";
   signal frame_ptr_out_d2 : STD_LOGIC_VECTOR ( 5 downto 0 );
   attribute async_reg of frame_ptr_out_d2 : signal is "true";
+  signal othrchnl_frame_ptr_in_d1_cdc_tig : STD_LOGIC_VECTOR ( 5 downto 0 );
+  attribute async_reg of othrchnl_frame_ptr_in_d1_cdc_tig : signal is "true";
+  signal othrchnl_frame_ptr_in_d2 : STD_LOGIC_VECTOR ( 5 downto 0 );
+  attribute async_reg of othrchnl_frame_ptr_in_d2 : signal is "true";
   signal p_2_in : STD_LOGIC_VECTOR ( 5 downto 0 );
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \GEN_CDC_FOR_ASYNC.frame_ptr_in_d1_cdc_tig_reg[0]\ : label is std.standard.true;
@@ -28385,6 +29005,102 @@ begin
       D => frame_ptr_out_d1_cdc_tig(5),
       Q => frame_ptr_out_d2(5),
       R => '0'
+    );
+i_10: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d1_cdc_tig(0)
+    );
+i_11: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d2(5)
+    );
+i_12: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d2(4)
+    );
+i_13: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d2(3)
+    );
+i_14: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d2(2)
+    );
+i_15: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d2(1)
+    );
+i_16: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d2(0)
+    );
+i_5: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d1_cdc_tig(5)
+    );
+i_6: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d1_cdc_tig(4)
+    );
+i_7: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d1_cdc_tig(3)
+    );
+i_8: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d1_cdc_tig(2)
+    );
+i_9: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => othrchnl_frame_ptr_in_d1_cdc_tig(1)
     );
 end STRUCTURE;
 library IEEE;
@@ -30352,6 +31068,18 @@ architecture STRUCTURE of linux_bd_axi_vdma_0_0_axi_vdma_reg_if is
   attribute async_reg of mm2s_ip2axi_frame_ptr_ref_cdc_tig : signal is "true";
   signal mm2s_ip2axi_frame_store_cdc_tig : STD_LOGIC_VECTOR ( 4 downto 0 );
   attribute async_reg of mm2s_ip2axi_frame_store_cdc_tig : signal is "true";
+  signal s2mm_capture_dm_done_vsize_counter_cdc_tig : STD_LOGIC_VECTOR ( 12 downto 0 );
+  attribute async_reg of s2mm_capture_dm_done_vsize_counter_cdc_tig : signal is "true";
+  signal s2mm_capture_hsize_at_uf_err_cdc_tig : STD_LOGIC_VECTOR ( 15 downto 0 );
+  attribute async_reg of s2mm_capture_hsize_at_uf_err_cdc_tig : signal is "true";
+  signal s2mm_chnl_current_frame_cdc_tig : STD_LOGIC_VECTOR ( 4 downto 0 );
+  attribute async_reg of s2mm_chnl_current_frame_cdc_tig : signal is "true";
+  signal s2mm_genlock_pair_frame_cdc_tig : STD_LOGIC_VECTOR ( 4 downto 0 );
+  attribute async_reg of s2mm_genlock_pair_frame_cdc_tig : signal is "true";
+  signal s2mm_ip2axi_frame_ptr_ref_cdc_tig : STD_LOGIC_VECTOR ( 4 downto 0 );
+  attribute async_reg of s2mm_ip2axi_frame_ptr_ref_cdc_tig : signal is "true";
+  signal s2mm_ip2axi_frame_store_cdc_tig : STD_LOGIC_VECTOR ( 4 downto 0 );
+  attribute async_reg of s2mm_ip2axi_frame_store_cdc_tig : signal is "true";
   attribute ASYNC_REG_boolean : boolean;
   attribute ASYNC_REG_boolean of \GEN_MM2S_LITE_CROSSINGS.GEN_MM2S_CROSSINGS_ASYNC.mm2s_chnl_current_frame_cdc_tig_reg[0]\ : label is std.standard.true;
   attribute KEEP : string;
@@ -30691,6 +31419,398 @@ begin
       D => \MM2S_ERR_FOR_IRQ.frm_store_i_reg[4]\(4),
       Q => mm2s_ip2axi_frame_store_cdc_tig(4),
       R => '0'
+    );
+i_0: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_ptr_ref_cdc_tig(4)
+    );
+i_1: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_ptr_ref_cdc_tig(3)
+    );
+i_10: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_chnl_current_frame_cdc_tig(4)
+    );
+i_11: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_chnl_current_frame_cdc_tig(3)
+    );
+i_12: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_chnl_current_frame_cdc_tig(2)
+    );
+i_13: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_chnl_current_frame_cdc_tig(1)
+    );
+i_14: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_chnl_current_frame_cdc_tig(0)
+    );
+i_15: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_genlock_pair_frame_cdc_tig(4)
+    );
+i_16: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_genlock_pair_frame_cdc_tig(3)
+    );
+i_17: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_genlock_pair_frame_cdc_tig(2)
+    );
+i_18: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_genlock_pair_frame_cdc_tig(1)
+    );
+i_19: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_genlock_pair_frame_cdc_tig(0)
+    );
+i_2: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_ptr_ref_cdc_tig(2)
+    );
+i_20: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(15)
+    );
+i_21: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(14)
+    );
+i_22: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(13)
+    );
+i_23: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(12)
+    );
+i_24: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(11)
+    );
+i_25: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(10)
+    );
+i_26: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(9)
+    );
+i_27: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(8)
+    );
+i_28: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(7)
+    );
+i_29: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(6)
+    );
+i_3: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_ptr_ref_cdc_tig(1)
+    );
+i_30: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(5)
+    );
+i_31: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(4)
+    );
+i_32: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(3)
+    );
+i_33: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(2)
+    );
+i_34: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(1)
+    );
+i_35: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_hsize_at_uf_err_cdc_tig(0)
+    );
+i_36: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(12)
+    );
+i_37: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(11)
+    );
+i_38: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(10)
+    );
+i_39: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(9)
+    );
+i_4: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_ptr_ref_cdc_tig(0)
+    );
+i_40: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(8)
+    );
+i_41: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(7)
+    );
+i_42: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(6)
+    );
+i_43: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(5)
+    );
+i_44: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(4)
+    );
+i_45: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(3)
+    );
+i_46: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(2)
+    );
+i_47: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(1)
+    );
+i_48: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_capture_dm_done_vsize_counter_cdc_tig(0)
+    );
+i_5: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_store_cdc_tig(4)
+    );
+i_6: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_store_cdc_tig(3)
+    );
+i_7: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_store_cdc_tig(2)
+    );
+i_8: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_store_cdc_tig(1)
+    );
+i_9: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => '0',
+      O => s2mm_ip2axi_frame_store_cdc_tig(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -31913,7 +33033,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin is
+entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_builtin is
   port (
     fifo_full_i : out STD_LOGIC;
     sig_m_valid_out_reg : out STD_LOGIC;
@@ -31927,10 +33047,10 @@ entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin is
     DIN : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin : entity is "fifo_generator_v13_1_0_builtin";
-end linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin;
+  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_builtin : entity is "fifo_generator_v13_1_1_builtin";
+end linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_builtin;
 
-architecture STRUCTURE of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin is
+architecture STRUCTURE of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_builtin is
   signal rd_rst_i : STD_LOGIC;
 begin
 \g7ser_birst.rstbt\: entity work.linux_bd_axi_vdma_0_0_reset_builtin
@@ -33469,7 +34589,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth is
+entity linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3_synth is
   port (
     DOBDO : out STD_LOGIC_VECTOR ( 0 to 0 );
     \sig_user_skid_reg_reg[0]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -33493,10 +34613,10 @@ entity linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth is
     \INFERRED_GEN.cnt_i_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth : entity is "blk_mem_gen_v8_3_2_synth";
-end linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth;
+  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3_synth : entity is "blk_mem_gen_v8_3_3_synth";
+end linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3_synth;
 
-architecture STRUCTURE of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth is
+architecture STRUCTURE of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3_synth is
 begin
 \gnbram.gnativebmg.native_blk_mem_gen\: entity work.linux_bd_axi_vdma_0_0_blk_mem_gen_top
      port map (
@@ -33545,7 +34665,7 @@ end linux_bd_axi_vdma_0_0_fifo_generator_top;
 
 architecture STRUCTURE of linux_bd_axi_vdma_0_0_fifo_generator_top is
 begin
-\gbi.bi\: entity work.linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_builtin
+\gbi.bi\: entity work.linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_builtin
      port map (
       DIN(1 downto 0) => DIN(1 downto 0),
       dm2linebuf_mm2s_tdata(31 downto 0) => dm2linebuf_mm2s_tdata(31 downto 0),
@@ -33563,7 +34683,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2 is
+entity linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3 is
   port (
     DOBDO : out STD_LOGIC_VECTOR ( 0 to 0 );
     \sig_user_skid_reg_reg[0]\ : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -33587,12 +34707,12 @@ entity linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2 is
     \INFERRED_GEN.cnt_i_reg[2]\ : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2 : entity is "blk_mem_gen_v8_3_2";
-end linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2;
+  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3 : entity is "blk_mem_gen_v8_3_3";
+end linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3;
 
-architecture STRUCTURE of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2 is
+architecture STRUCTURE of linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3 is
 begin
-inst_blk_mem_gen: entity work.linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2_synth
+inst_blk_mem_gen: entity work.linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3_synth
      port map (
       DIBDI(1 downto 0) => DIBDI(1 downto 0),
       DOBDO(0) => DOBDO(0),
@@ -33620,7 +34740,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth is
+entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth is
   port (
     fifo_full_i : out STD_LOGIC;
     sig_m_valid_out_reg : out STD_LOGIC;
@@ -33634,10 +34754,10 @@ entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth is
     DIN : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth : entity is "fifo_generator_v13_1_0_synth";
-end linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth;
+  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth : entity is "fifo_generator_v13_1_1_synth";
+end linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth;
 
-architecture STRUCTURE of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth is
+architecture STRUCTURE of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth is
 begin
 \gconvfifo.rf\: entity work.linux_bd_axi_vdma_0_0_fifo_generator_top
      port map (
@@ -33657,7 +34777,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0 is
+entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1 is
   port (
     fifo_full_i : out STD_LOGIC;
     sig_m_valid_out_reg : out STD_LOGIC;
@@ -33671,12 +34791,12 @@ entity linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0 is
     DIN : in STD_LOGIC_VECTOR ( 1 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0 : entity is "fifo_generator_v13_1_0";
-end linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0;
+  attribute ORIG_REF_NAME of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1 : entity is "fifo_generator_v13_1_1";
+end linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1;
 
-architecture STRUCTURE of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0 is
+architecture STRUCTURE of linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1 is
 begin
-inst_fifo_gen: entity work.linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth
+inst_fifo_gen: entity work.linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth
      port map (
       DIN(1 downto 0) => DIN(1 downto 0),
       dm2linebuf_mm2s_tdata(31 downto 0) => dm2linebuf_mm2s_tdata(31 downto 0),
@@ -33723,7 +34843,7 @@ end linux_bd_axi_vdma_0_0_memory;
 
 architecture STRUCTURE of linux_bd_axi_vdma_0_0_memory is
 begin
-\gbm.gbmg.gbmgb.ngecc.bmg\: entity work.linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_2
+\gbm.gbmg.gbmgb.ngecc.bmg\: entity work.linux_bd_axi_vdma_0_0_blk_mem_gen_v8_3_3
      port map (
       DIBDI(1 downto 0) => DIBDI(1 downto 0),
       DOBDO(0) => DOBDO(0),
@@ -33770,7 +34890,7 @@ end linux_bd_axi_vdma_0_0_axi_vdma_afifo_builtin;
 
 architecture STRUCTURE of linux_bd_axi_vdma_0_0_axi_vdma_afifo_builtin is
 begin
-fg_builtin_fifo_inst: entity work.linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0
+fg_builtin_fifo_inst: entity work.linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1
      port map (
       DIN(1 downto 0) => DIN(1 downto 0),
       dm2linebuf_mm2s_tdata(31 downto 0) => dm2linebuf_mm2s_tdata(31 downto 0),
@@ -35378,7 +36498,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0\ is
+entity \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth__parameterized0\ is
   port (
     DOBDO : out STD_LOGIC_VECTOR ( 0 to 0 );
     \sig_wrcnt_mblen_slice__0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -35413,10 +36533,10 @@ entity \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0\ is
     D : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0\ : entity is "fifo_generator_v13_1_0_synth";
-end \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0\;
+  attribute ORIG_REF_NAME of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth__parameterized0\ : entity is "fifo_generator_v13_1_1_synth";
+end \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth__parameterized0\;
 
-architecture STRUCTURE of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0\ is
+architecture STRUCTURE of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth__parameterized0\ is
 begin
 \gconvfifo.rf\: entity work.\linux_bd_axi_vdma_0_0_fifo_generator_top__parameterized0\
      port map (
@@ -35457,7 +36577,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0\ is
+entity \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1__parameterized0\ is
   port (
     DOBDO : out STD_LOGIC_VECTOR ( 0 to 0 );
     \sig_wrcnt_mblen_slice__0\ : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -35492,12 +36612,12 @@ entity \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0\ is
     D : in STD_LOGIC_VECTOR ( 5 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0\ : entity is "fifo_generator_v13_1_0";
-end \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0\;
+  attribute ORIG_REF_NAME of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1__parameterized0\ : entity is "fifo_generator_v13_1_1";
+end \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1__parameterized0\;
 
-architecture STRUCTURE of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0\ is
+architecture STRUCTURE of \linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1__parameterized0\ is
 begin
-inst_fifo_gen: entity work.\linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0_synth__parameterized0\
+inst_fifo_gen: entity work.\linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1_synth__parameterized0\
      port map (
       D(5 downto 0) => D(5 downto 0),
       DI(3 downto 0) => DI(3 downto 0),
@@ -35576,7 +36696,7 @@ end linux_bd_axi_vdma_0_0_sync_fifo_fg;
 
 architecture STRUCTURE of linux_bd_axi_vdma_0_0_sync_fifo_fg is
 begin
-\FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM\: entity work.\linux_bd_axi_vdma_0_0_fifo_generator_v13_1_0__parameterized0\
+\FAMILY_SUPPORTED.I_SYNC_FIFO_BRAM\: entity work.\linux_bd_axi_vdma_0_0_fifo_generator_v13_1_1__parameterized0\
      port map (
       D(5 downto 0) => D(5 downto 0),
       DI(3 downto 0) => DI(3 downto 0),
@@ -37694,7 +38814,7 @@ entity linux_bd_axi_vdma_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of linux_bd_axi_vdma_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of linux_bd_axi_vdma_0_0 : entity is "axi_vdma,Vivado 2016.1";
+  attribute x_core_info of linux_bd_axi_vdma_0_0 : entity is "axi_vdma,Vivado 2016.2";
 end linux_bd_axi_vdma_0_0;
 
 architecture STRUCTURE of linux_bd_axi_vdma_0_0 is

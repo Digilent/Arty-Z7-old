@@ -432,7 +432,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 09 07:29:13 UTC 2016</spirit:value>
+            <spirit:value>Tue Aug 09 07:55:02 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -444,7 +444,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>842b1d4c</spirit:value>
+            <spirit:value>7e39ea5a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -462,7 +462,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 09 07:29:13 UTC 2016</spirit:value>
+            <spirit:value>Tue Aug 09 07:55:02 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -474,7 +474,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>842b1d4c</spirit:value>
+            <spirit:value>7e39ea5a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -493,7 +493,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 09 07:29:13 UTC 2016</spirit:value>
+            <spirit:value>Tue Aug 09 07:55:02 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -505,7 +505,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>842b1d4c</spirit:value>
+            <spirit:value>7e39ea5a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -536,7 +536,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 09 07:29:14 UTC 2016</spirit:value>
+            <spirit:value>Tue Aug 09 07:55:02 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -548,7 +548,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>8dcca66c</spirit:value>
+            <spirit:value>525cd3fb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -567,7 +567,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 09 07:29:14 UTC 2016</spirit:value>
+            <spirit:value>Tue Aug 09 07:55:02 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -579,7 +579,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>8dcca66c</spirit:value>
+            <spirit:value>525cd3fb</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -597,7 +597,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Aug 09 07:33:00 UTC 2016</spirit:value>
+            <spirit:value>Tue Aug 09 07:58:27 UTC 2016</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
@@ -609,7 +609,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRC</spirit:name>
-            <spirit:value>842b1d4c</spirit:value>
+            <spirit:value>7e39ea5a</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>customizationCRCversion</spirit:name>
@@ -1176,18 +1176,18 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_xilinx_com_ip_blk_mem_gen_8_3__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>blk_mem_gen_v8_3_2/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd</spirit:name>
+        <spirit:name>blk_mem_gen_v8_3_3/hdl/blk_mem_gen_v8_3_vhsyn_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>blk_mem_gen_v8_3_2</spirit:logicalName>
+        <spirit:logicalName>blk_mem_gen_v8_3_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>blk_mem_gen_v8_3_2/hdl/blk_mem_gen_v8_3.vhd</spirit:name>
+        <spirit:name>blk_mem_gen_v8_3_3/hdl/blk_mem_gen_v8_3.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>blk_mem_gen_v8_3_2</spirit:logicalName>
+        <spirit:logicalName>blk_mem_gen_v8_3_3</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.3" xilinx:isGenerated="true" xilinx:checksum="f3d1b5fc">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="blk_mem_gen" xilinx:version="8.3" xilinx:isGenerated="true" xilinx:checksum="4a61723d">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1196,18 +1196,18 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_xilinx_com_ip_fifo_generator_13_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>fifo_generator_v13_0_2/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd</spirit:name>
+        <spirit:name>fifo_generator_v13_0_3/hdl/fifo_generator_v13_0_vhsyn_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v13_0_2</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>fifo_generator_v13_0_2/hdl/fifo_generator_v13_0.vhd</spirit:name>
+        <spirit:name>fifo_generator_v13_0_3/hdl/fifo_generator_v13_0.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:logicalName>fifo_generator_v13_0_2</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="88041ca3">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="18adcbd9">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1226,24 +1226,24 @@
         </spirit:define>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0_coupler.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0_coupler.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0_sync.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0_formatter.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0_formatter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1267,21 +1267,21 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_fifo_generator_13_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>fifo_generator_v13_0_2/simulation/fifo_generator_vhdl_beh.vhd</spirit:name>
+        <spirit:name>fifo_generator_v13_0_3/simulation/fifo_generator_vhdl_beh.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>fifo_generator_v13_0_2</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_3</spirit:logicalName>
         <spirit:exportedName>fifo_generator_vhdl_beh</spirit:exportedName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>fifo_generator_v13_0_2/hdl/fifo_generator_v13_0_rfs.vhd</spirit:name>
+        <spirit:name>fifo_generator_v13_0_3/hdl/fifo_generator_v13_0_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>fifo_generator_v13_0_2</spirit:logicalName>
+        <spirit:logicalName>fifo_generator_v13_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="7adbc317">
+          <xilinx:componentRef xsi:type="xilinx:componentRefType" xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="fifo_generator" xilinx:version="13.0" xilinx:isGenerated="true" xilinx:checksum="abbce02b">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1290,38 +1290,38 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_axi_lite_ipif_3_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>axi_lite_ipif_v3_0_3/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/ipif_pkg.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_lite_ipif_v3_0_3</spirit:logicalName>
+        <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>axi_lite_ipif_v3_0_3/hdl/src/vhdl/pselect_f.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/pselect_f.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_lite_ipif_v3_0_3</spirit:logicalName>
+        <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>axi_lite_ipif_v3_0_3/hdl/src/vhdl/address_decoder.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/address_decoder.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_lite_ipif_v3_0_3</spirit:logicalName>
+        <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>axi_lite_ipif_v3_0_3/hdl/src/vhdl/slave_attachment.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/slave_attachment.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_lite_ipif_v3_0_3</spirit:logicalName>
+        <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>axi_lite_ipif_v3_0_3/hdl/src/vhdl/axi_lite_ipif.vhd</spirit:name>
+        <spirit:name>axi_lite_ipif_v3_0_4/hdl/src/vhdl/axi_lite_ipif.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>axi_lite_ipif_v3_0_3</spirit:logicalName>
+        <spirit:logicalName>axi_lite_ipif_v3_0_4</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_lite_ipif" xilinx:version="3.0" xilinx:isGenerated="true" xilinx:checksum="d3ec2643">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="axi_lite_ipif" xilinx:version="3.0" xilinx:isGenerated="true" xilinx:checksum="77be8595">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1330,14 +1330,14 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_v_tc_6_1__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>v_tc_v6_1_7/hdl/v_tc_v6_1_vh_rfs.vhd</spirit:name>
+        <spirit:name>v_tc_v6_1_8/hdl/v_tc_v6_1_vh_rfs.vhd</spirit:name>
         <spirit:fileType>vhdlSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_tc_v6_1_7</spirit:logicalName>
+        <spirit:logicalName>v_tc_v6_1_8</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="v_tc" xilinx:version="6.1" xilinx:isGenerated="true" xilinx:checksum="08b28e59">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="v_tc" xilinx:version="6.1" xilinx:isGenerated="true" xilinx:checksum="8c77f931">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1346,26 +1346,26 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_xilinx_com_ip_v_vid_in_axi4s_4_0__ref_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>v_vid_in_axi4s_v4_0_2/hdl/verilog/v_vid_in_axi4s_v4_0_coupler.v</spirit:name>
+        <spirit:name>v_vid_in_axi4s_v4_0_3/hdl/verilog/v_vid_in_axi4s_v4_0_coupler.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_vid_in_axi4s_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_vid_in_axi4s_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_vid_in_axi4s_v4_0_2/hdl/verilog/v_vid_in_axi4s_v4_0_formatter.v</spirit:name>
+        <spirit:name>v_vid_in_axi4s_v4_0_3/hdl/verilog/v_vid_in_axi4s_v4_0_formatter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_vid_in_axi4s_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_vid_in_axi4s_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_vid_in_axi4s_v4_0_2/hdl/verilog/v_vid_in_axi4s_v4_0.v</spirit:name>
+        <spirit:name>v_vid_in_axi4s_v4_0_3/hdl/verilog/v_vid_in_axi4s_v4_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_vid_in_axi4s_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_vid_in_axi4s_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:vendorExtensions>
         <xilinx:subCoreRef>
-          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="v_vid_in_axi4s" xilinx:version="4.0" xilinx:isGenerated="true" xilinx:checksum="b923f28f">
+          <xilinx:componentRef xilinx:vendor="xilinx.com" xilinx:library="ip" xilinx:name="v_vid_in_axi4s" xilinx:version="4.0" xilinx:isGenerated="true" xilinx:checksum="bf66ba5b">
             <xilinx:mode xilinx:name="copy_mode"/>
           </xilinx:componentRef>
         </xilinx:subCoreRef>
@@ -1374,28 +1374,28 @@
     <spirit:fileSet>
       <spirit:name>xilinx_verilogbehavioralsimulation_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0_coupler.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0_coupler.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0_sync.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0_sync.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>v_axi4s_vid_out_v4_0_2/hdl/verilog/v_axi4s_vid_out_v4_0_formatter.v</spirit:name>
+        <spirit:name>v_axi4s_vid_out_v4_0_3/hdl/verilog/v_axi4s_vid_out_v4_0_formatter.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
         <spirit:userFileType>USED_IN_ipstatic</spirit:userFileType>
-        <spirit:logicalName>v_axi4s_vid_out_v4_0_2</spirit:logicalName>
+        <spirit:logicalName>v_axi4s_vid_out_v4_0_3</spirit:logicalName>
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
@@ -1568,7 +1568,7 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>AXI4-Stream to Video Out</xilinx:displayName>
-      <xilinx:coreRevision>2</xilinx:coreRevision>
+      <xilinx:coreRevision>3</xilinx:coreRevision>
       <xilinx:configElementInfos>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK_INTF.CLK_DOMAIN" xilinx:valueSource="default_prop"/>
         <xilinx:configElementInfo xilinx:referenceId="BUSIFPARAM_VALUE.ACLK_INTF.FREQ_HZ" xilinx:valueSource="user_prop"/>
@@ -1591,9 +1591,9 @@
       </xilinx:configElementInfos>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2016.1</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2016.2</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="1146525a"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="5aeee9e7"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="414a2400"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="52ea6f0d"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="67f7f94e"/>
       <xilinx:checksum xilinx:scope="parameters" xilinx:value="fe73e4be"/>

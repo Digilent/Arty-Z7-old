@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:36:57 2016
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Tue Aug 09 01:01:55 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode synth_stub -rename_top linux_bd_s00_data_fifo_0 -prefix linux_bd_s00_data_fifo_0_
---               linux_bd_s00_data_fifo_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_s00_data_fifo_0/linux_bd_s00_data_fifo_0_stub.vhdl
 -- Design      : linux_bd_s00_data_fifo_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1
@@ -12,7 +12,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity \linux_bd_s00_data_fifo_0\ is
+entity linux_bd_s00_data_fifo_0 is
   Port ( 
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -48,14 +48,14 @@ entity \linux_bd_s00_data_fifo_0\ is
     m_axi_rready : out STD_LOGIC
   );
 
-end \linux_bd_s00_data_fifo_0\;
+end linux_bd_s00_data_fifo_0;
 
-architecture stub of \linux_bd_s00_data_fifo_0\ is
+architecture stub of linux_bd_s00_data_fifo_0 is
 attribute syn_black_box : boolean;
 attribute black_box_pad_pin : string;
 attribute syn_black_box of stub : architecture is true;
 attribute black_box_pad_pin of stub : architecture is "aclk,aresetn,s_axi_araddr[31:0],s_axi_arlen[3:0],s_axi_arsize[2:0],s_axi_arburst[1:0],s_axi_arlock[1:0],s_axi_arcache[3:0],s_axi_arprot[2:0],s_axi_arqos[3:0],s_axi_arvalid,s_axi_arready,s_axi_rdata[63:0],s_axi_rresp[1:0],s_axi_rlast,s_axi_rvalid,s_axi_rready,m_axi_araddr[31:0],m_axi_arlen[3:0],m_axi_arsize[2:0],m_axi_arburst[1:0],m_axi_arlock[1:0],m_axi_arcache[3:0],m_axi_arprot[2:0],m_axi_arqos[3:0],m_axi_arvalid,m_axi_arready,m_axi_rdata[63:0],m_axi_rresp[1:0],m_axi_rlast,m_axi_rvalid,m_axi_rready";
 attribute X_CORE_INFO : string;
-attribute X_CORE_INFO of stub : architecture is "axi_data_fifo_v2_1_7_axi_data_fifo,Vivado 2016.1";
+attribute X_CORE_INFO of stub : architecture is "axi_data_fifo_v2_1_8_axi_data_fifo,Vivado 2016.2";
 begin
 end;

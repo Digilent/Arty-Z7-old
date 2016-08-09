@@ -47,14 +47,14 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:ip:v_tc:6.1
--- IP Revision: 7
+-- IP Revision: 8
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 USE ieee.numeric_std.ALL;
 
-LIBRARY v_tc_v6_1_7;
-USE v_tc_v6_1_7.v_tc;
+LIBRARY v_tc_v6_1_8;
+USE v_tc_v6_1_8.v_tc;
 
 ENTITY linux_bd_v_tc_0_0 IS
   PORT (

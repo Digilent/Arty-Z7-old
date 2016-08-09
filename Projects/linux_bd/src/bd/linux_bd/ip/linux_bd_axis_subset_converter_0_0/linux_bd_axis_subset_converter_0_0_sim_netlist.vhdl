@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:33:49 2016
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Tue Aug 09 00:59:08 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_axis_subset_converter_0_0/linux_bd_axis_subset_converter_0_0_sim_netlist.vhdl
@@ -169,7 +169,7 @@ entity linux_bd_axis_subset_converter_0_0 is
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of linux_bd_axis_subset_converter_0_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of linux_bd_axis_subset_converter_0_0 : entity is "top_linux_bd_axis_subset_converter_0_0,Vivado 2016.1";
+  attribute X_CORE_INFO of linux_bd_axis_subset_converter_0_0 : entity is "top_linux_bd_axis_subset_converter_0_0,Vivado 2016.2";
 end linux_bd_axis_subset_converter_0_0;
 
 architecture STRUCTURE of linux_bd_axis_subset_converter_0_0 is

@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:32:33 2016
+-- Date        : Tue Aug 09 00:32:32 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_axi_dynclk_0_0/linux_bd_axi_dynclk_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top linux_bd_axi_dynclk_0_0 -prefix linux_bd_axi_dynclk_0_0_
+--               linux_bd_axi_dynclk_0_0_sim_netlist.vhdl
 -- Design      : linux_bd_axi_dynclk_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI is
+entity \linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI\ is
   port (
     s00_axi_awready : out STD_LOGIC;
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -49,11 +49,9 @@ entity linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI is
     s00_axi_wdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axi_araddr : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI : entity is "axi_dynclk_S00_AXI";
-end linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI;
+end \linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI\;
 
-architecture STRUCTURE of linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI is
+architecture STRUCTURE of \linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI\ is
   signal \^q\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal \^sr\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \axi_araddr[2]_i_1_n_0\ : STD_LOGIC;
@@ -4580,7 +4578,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_dynclk_0_0_mmcme2_drp is
+entity \linux_bd_axi_dynclk_0_0_mmcme2_drp\ is
   port (
     I : out STD_LOGIC;
     LOCKED_O : out STD_LOGIC;
@@ -4604,11 +4602,9 @@ entity linux_bd_axi_dynclk_0_0_mmcme2_drp is
     \slv_reg2_reg[31]\ : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_dynclk_0_0_mmcme2_drp : entity is "mmcme2_drp";
-end linux_bd_axi_dynclk_0_0_mmcme2_drp;
+end \linux_bd_axi_dynclk_0_0_mmcme2_drp\;
 
-architecture STRUCTURE of linux_bd_axi_dynclk_0_0_mmcme2_drp is
+architecture STRUCTURE of \linux_bd_axi_dynclk_0_0_mmcme2_drp\ is
   signal DADDR : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal \DADDR[6]_i_1_n_0\ : STD_LOGIC;
   signal \DADDR[6]_i_2_n_0\ : STD_LOGIC;
@@ -6241,7 +6237,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_dynclk_0_0_axi_dynclk is
+entity \linux_bd_axi_dynclk_0_0_axi_dynclk\ is
   port (
     s00_axi_wready : out STD_LOGIC;
     s00_axi_awready : out STD_LOGIC;
@@ -6265,11 +6261,9 @@ entity linux_bd_axi_dynclk_0_0_axi_dynclk is
     s00_axi_bready : in STD_LOGIC;
     s00_axi_rready : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_axi_dynclk_0_0_axi_dynclk : entity is "axi_dynclk";
-end linux_bd_axi_dynclk_0_0_axi_dynclk;
+end \linux_bd_axi_dynclk_0_0_axi_dynclk\;
 
-architecture STRUCTURE of linux_bd_axi_dynclk_0_0_axi_dynclk is
+architecture STRUCTURE of \linux_bd_axi_dynclk_0_0_axi_dynclk\ is
   signal CLR : STD_LOGIC;
   signal CTRL_REG : STD_LOGIC;
   signal \FSM_onehot_clk_state[2]_i_1_n_0\ : STD_LOGIC;
@@ -6391,7 +6385,7 @@ BUFR_inst: unisim.vcomponents.BUFR
       Q => STAT_REG(0),
       R => RST
     );
-Inst_mmcme2_drp: entity work.linux_bd_axi_dynclk_0_0_mmcme2_drp
+Inst_mmcme2_drp: entity work.\linux_bd_axi_dynclk_0_0_mmcme2_drp\
      port map (
       CLR => CLR,
       D(11 downto 10) => rom(12 downto 11),
@@ -6425,7 +6419,7 @@ Inst_mmcme2_drp: entity work.linux_bd_axi_dynclk_0_0_mmcme2_drp
       \slv_reg4_reg[0]\ => axi_dynclk_S00_AXI_inst_n_31,
       \slv_reg4_reg[3]\ => axi_dynclk_S00_AXI_inst_n_33
     );
-axi_dynclk_S00_AXI_inst: entity work.linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI
+axi_dynclk_S00_AXI_inst: entity work.\linux_bd_axi_dynclk_0_0_axi_dynclk_S00_AXI\
      port map (
       D(11 downto 10) => rom(12 downto 11),
       D(9 downto 0) => rom(9 downto 0),
@@ -6483,7 +6477,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_axi_dynclk_0_0 is
+entity \linux_bd_axi_dynclk_0_0\ is
   port (
     REF_CLK_I : in STD_LOGIC;
     PXL_CLK_O : out STD_LOGIC;
@@ -6512,16 +6506,16 @@ entity linux_bd_axi_dynclk_0_0 is
     s00_axi_rready : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of linux_bd_axi_dynclk_0_0 : entity is true;
+  attribute NotValidForBitStream of \linux_bd_axi_dynclk_0_0\ : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of linux_bd_axi_dynclk_0_0 : entity is "linux_bd_axi_dynclk_0_0,axi_dynclk,{}";
+  attribute CHECK_LICENSE_TYPE of \linux_bd_axi_dynclk_0_0\ : entity is "linux_bd_axi_dynclk_0_0,axi_dynclk,{}";
   attribute downgradeipidentifiedwarnings : string;
-  attribute downgradeipidentifiedwarnings of linux_bd_axi_dynclk_0_0 : entity is "yes";
+  attribute downgradeipidentifiedwarnings of \linux_bd_axi_dynclk_0_0\ : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of linux_bd_axi_dynclk_0_0 : entity is "axi_dynclk,Vivado 2016.1";
-end linux_bd_axi_dynclk_0_0;
+  attribute x_core_info of \linux_bd_axi_dynclk_0_0\ : entity is "axi_dynclk,Vivado 2016.1";
+end \linux_bd_axi_dynclk_0_0\;
 
-architecture STRUCTURE of linux_bd_axi_dynclk_0_0 is
+architecture STRUCTURE of \linux_bd_axi_dynclk_0_0\ is
   signal \<const0>\ : STD_LOGIC;
 begin
   s00_axi_bresp(1) <= \<const0>\;
@@ -6532,7 +6526,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-U0: entity work.linux_bd_axi_dynclk_0_0_axi_dynclk
+U0: entity work.\linux_bd_axi_dynclk_0_0_axi_dynclk\
      port map (
       LOCKED_O => LOCKED_O,
       PXL_CLK_5X_O => PXL_CLK_5X_O,

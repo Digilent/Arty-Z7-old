@@ -1,7 +1,7 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:33:14 2016
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Tue Aug 09 00:57:56 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 -- Command     : write_vhdl -force -mode funcsim
 --               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_v_tc_0_0/linux_bd_v_tc_0_0_sim_netlist.vhdl
@@ -19257,6 +19257,7 @@ architecture STRUCTURE of linux_bd_v_tc_0_0_video_clock_cross is
   attribute async_reg of \data_sync[2]_2\ : signal is "true";
   attribute shift_extract of \data_sync[2]_2\ : signal is "NO";
   attribute shreg_extract of \data_sync[2]_2\ : signal is "no";
+  signal \^ipif_addr\ : STD_LOGIC_VECTOR ( 8 downto 0 );
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \AXI4_LITE_INTERFACE.core_control_regs_int[12][27]_i_1\ : label is "soft_lutpair9";
   attribute SOFT_HLUTNM of \AXI4_LITE_INTERFACE.core_control_regs_int[13][27]_i_2\ : label is "soft_lutpair11";
@@ -20329,7 +20330,9 @@ architecture STRUCTURE of linux_bd_v_tc_0_0_video_clock_cross is
 begin
   \AXI4_LITE_INTERFACE.core_control_regs_int_reg[0][0]_0\ <= \data_sync[2]_2\(34);
   \GEN_TREE.GEN_BRANCH[35].GEN_MUX_REG.data_out_reg_reg[35][31]\ <= \data_sync[2]_2\(34);
-  ipif_Addr(8 downto 0) <= \data_sync[2]_2\(40 downto 32);
+  ipif_Addr(8) <= \^ipif_addr\(8);
+  ipif_Addr(7 downto 2) <= \data_sync[2]_2\(39 downto 34);
+  ipif_Addr(1 downto 0) <= \^ipif_addr\(1 downto 0);
   out_data(32) <= \data_sync[2]_2\(42);
   out_data(31 downto 0) <= \data_sync[2]_2\(31 downto 0);
 \AXI4_LITE_INTERFACE.core_control_regs_int[0][27]_i_1\: unisim.vcomponents.LUT5
@@ -27630,6 +27633,30 @@ begin
       D => \data_sync[1]_1\(9),
       Q => \data_sync[2]_2\(9),
       R => '0'
+    );
+\ipif_Addr_inferred__0_i_1\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \data_sync[2]_2\(40),
+      O => \^ipif_addr\(8)
+    );
+\ipif_Addr_inferred__0_i_8\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \data_sync[2]_2\(33),
+      O => \^ipif_addr\(1)
+    );
+\ipif_Addr_inferred__0_i_9\: unisim.vcomponents.LUT1
+    generic map(
+      INIT => X"2"
+    )
+        port map (
+      I0 => \data_sync[2]_2\(32),
+      O => \^ipif_addr\(0)
     );
 end STRUCTURE;
 library IEEE;
@@ -54257,7 +54284,7 @@ entity linux_bd_v_tc_0_0 is
   attribute downgradeipidentifiedwarnings : string;
   attribute downgradeipidentifiedwarnings of linux_bd_v_tc_0_0 : entity is "yes";
   attribute x_core_info : string;
-  attribute x_core_info of linux_bd_v_tc_0_0 : entity is "v_tc,Vivado 2016.1";
+  attribute x_core_info of linux_bd_v_tc_0_0 : entity is "v_tc,Vivado 2016.2";
 end linux_bd_v_tc_0_0;
 
 architecture STRUCTURE of linux_bd_v_tc_0_0 is

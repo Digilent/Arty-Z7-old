@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
 // Date        : Tue Aug 09 00:31:37 2016
 // Host        : WK73 running 64-bit Service Pack 1  (build 7601)
-// Command     : write_verilog -force -mode funcsim
-//               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_xlconcat_0_0/linux_bd_xlconcat_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top linux_bd_xlconcat_0_0 -prefix linux_bd_xlconcat_0_0_
+//               linux_bd_xlconcat_0_0_sim_netlist.v
 // Design      : linux_bd_xlconcat_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.

@@ -1,7 +1,7 @@
 // Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
-// Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-// Date        : Tue Aug 09 00:33:13 2016
+// Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+// Date        : Tue Aug 09 00:57:55 2016
 // Host        : WK73 running 64-bit Service Pack 1  (build 7601)
 // Command     : write_verilog -force -mode funcsim
 //               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_v_tc_0_0/linux_bd_v_tc_0_0_sim_netlist.v
@@ -12,7 +12,7 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "linux_bd_v_tc_0_0,v_tc,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "v_tc,Vivado 2016.1" *) 
+(* CHECK_LICENSE_TYPE = "linux_bd_v_tc_0_0,v_tc,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* x_core_info = "v_tc,Vivado 2016.2" *) 
 (* NotValidForBitStream *)
 module linux_bd_v_tc_0_0
    (clk,
@@ -19277,6 +19277,7 @@ module linux_bd_v_tc_0_0_video_clock_cross
   wire [9:0]\genr_status_regs[3] ;
   wire [30:0]\genr_status_regs_int_reg[1] ;
   wire [31:0]intr_err;
+  wire [8:0]\^ipif_Addr ;
   wire p_456_out;
   wire p_533_out;
   wire p_535_out;
@@ -19316,7 +19317,9 @@ module linux_bd_v_tc_0_0_video_clock_cross
 
   assign \AXI4_LITE_INTERFACE.core_control_regs_int_reg[0][0]_0  = \data_sync[2]_2 [34];
   assign \GEN_TREE.GEN_BRANCH[35].GEN_MUX_REG.data_out_reg_reg[35][31]  = \data_sync[2]_2 [34];
-  assign ipif_Addr[8:0] = \data_sync[2]_2 [40:32];
+  assign ipif_Addr[8] = \^ipif_Addr [8];
+  assign ipif_Addr[7:2] = \data_sync[2]_2 [39:34];
+  assign ipif_Addr[1:0] = \^ipif_Addr [1:0];
   assign out_data[32] = \data_sync[2]_2 [42];
   assign out_data[31:0] = \data_sync[2]_2 [31:0];
   LUT5 #(
@@ -25601,6 +25604,21 @@ module linux_bd_v_tc_0_0_video_clock_cross
         .D(\data_sync[1]_1 [9]),
         .Q(\data_sync[2]_2 [9]),
         .R(1'b0));
+  LUT1 #(
+    .INIT(2'h2)) 
+    ipif_Addr_inferred__0_i_1
+       (.I0(\data_sync[2]_2 [40]),
+        .O(\^ipif_Addr [8]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    ipif_Addr_inferred__0_i_8
+       (.I0(\data_sync[2]_2 [33]),
+        .O(\^ipif_Addr [1]));
+  LUT1 #(
+    .INIT(2'h2)) 
+    ipif_Addr_inferred__0_i_9
+       (.I0(\data_sync[2]_2 [32]),
+        .O(\^ipif_Addr [0]));
 endmodule
 
 (* ORIG_REF_NAME = "video_clock_cross" *) 

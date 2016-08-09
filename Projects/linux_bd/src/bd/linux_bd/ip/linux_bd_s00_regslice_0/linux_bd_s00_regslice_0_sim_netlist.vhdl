@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
--- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:35:40 2016
+-- Tool Version: Vivado v.2016.2 (win64) Build 1577090 Thu Jun  2 16:32:40 MDT 2016
+-- Date        : Tue Aug 09 01:00:11 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim -rename_top linux_bd_s00_regslice_0 -prefix linux_bd_s00_regslice_0_
---               linux_bd_s00_regslice_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               c:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_s00_regslice_0/linux_bd_s00_regslice_0_sim_netlist.vhdl
 -- Design      : linux_bd_s00_regslice_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized2\ is
+entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized2\ is
   port (
     m_axi_arvalid : out STD_LOGIC;
     p_0_in : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -28,10 +28,10 @@ entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__p
     D : in STD_LOGIC_VECTOR ( 61 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized2\ : entity is "axi_register_slice_v2_1_8_axic_register_slice";
-end \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized2\;
+  attribute ORIG_REF_NAME of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized2\ : entity is "axi_register_slice_v2_1_9_axic_register_slice";
+end \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized2\;
 
-architecture STRUCTURE of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized2\ is
+architecture STRUCTURE of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized2\ is
   signal \aresetn_d[1]_i_1_n_0\ : STD_LOGIC;
   signal \^m_axi_arvalid\ : STD_LOGIC;
   signal \m_payload_i[53]_i_1_n_0\ : STD_LOGIC;
@@ -624,7 +624,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized3\ is
+entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized3\ is
   port (
     s_axi_rvalid : out STD_LOGIC;
     m_axi_rready : out STD_LOGIC;
@@ -640,10 +640,10 @@ entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__p
     m_axi_rdata : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
   attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized3\ : entity is "axi_register_slice_v2_1_8_axic_register_slice";
-end \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized3\;
+  attribute ORIG_REF_NAME of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized3\ : entity is "axi_register_slice_v2_1_9_axic_register_slice";
+end \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized3\;
 
-architecture STRUCTURE of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized3\ is
+architecture STRUCTURE of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized3\ is
   signal \^m_axi_rready\ : STD_LOGIC;
   signal \m_payload_i[67]_i_1_n_0\ : STD_LOGIC;
   signal m_valid_i_i_1_n_0 : STD_LOGIC;
@@ -2612,7 +2612,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ is
+entity linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -2708,194 +2708,196 @@ entity \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ is
     m_axi_rready : out STD_LOGIC
   );
   attribute C_AXI_ADDR_WIDTH : integer;
-  attribute C_AXI_ADDR_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 32;
+  attribute C_AXI_ADDR_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 32;
   attribute C_AXI_ARUSER_WIDTH : integer;
-  attribute C_AXI_ARUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_AXI_ARUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_AXI_AWUSER_WIDTH : integer;
-  attribute C_AXI_AWUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_AXI_AWUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_AXI_BUSER_WIDTH : integer;
-  attribute C_AXI_BUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_AXI_BUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_AXI_DATA_WIDTH : integer;
-  attribute C_AXI_DATA_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 64;
+  attribute C_AXI_DATA_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 64;
   attribute C_AXI_ID_WIDTH : integer;
-  attribute C_AXI_ID_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_AXI_ID_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_AXI_PROTOCOL : integer;
-  attribute C_AXI_PROTOCOL of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute C_AXI_PROTOCOL of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute C_AXI_RUSER_WIDTH : integer;
-  attribute C_AXI_RUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_AXI_RUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_AXI_SUPPORTS_REGION_SIGNALS : integer;
-  attribute C_AXI_SUPPORTS_REGION_SIGNALS of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_AXI_SUPPORTS_REGION_SIGNALS of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_AXI_SUPPORTS_USER_SIGNALS : integer;
-  attribute C_AXI_SUPPORTS_USER_SIGNALS of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute C_AXI_SUPPORTS_USER_SIGNALS of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute C_AXI_WUSER_WIDTH : integer;
-  attribute C_AXI_WUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_AXI_WUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_FAMILY : string;
-  attribute C_FAMILY of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is "zynq";
+  attribute C_FAMILY of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is "zynq";
   attribute C_REG_CONFIG_AR : integer;
-  attribute C_REG_CONFIG_AR of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 7;
+  attribute C_REG_CONFIG_AR of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 7;
   attribute C_REG_CONFIG_AW : integer;
-  attribute C_REG_CONFIG_AW of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute C_REG_CONFIG_AW of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute C_REG_CONFIG_B : integer;
-  attribute C_REG_CONFIG_B of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute C_REG_CONFIG_B of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute C_REG_CONFIG_R : integer;
-  attribute C_REG_CONFIG_R of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute C_REG_CONFIG_R of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute C_REG_CONFIG_W : integer;
-  attribute C_REG_CONFIG_W of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute C_REG_CONFIG_W of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is "yes";
   attribute G_AXI_ARADDR_INDEX : integer;
-  attribute G_AXI_ARADDR_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_ARADDR_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_ARADDR_WIDTH : integer;
-  attribute G_AXI_ARADDR_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 32;
+  attribute G_AXI_ARADDR_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 32;
   attribute G_AXI_ARBURST_INDEX : integer;
-  attribute G_AXI_ARBURST_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 38;
+  attribute G_AXI_ARBURST_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 38;
   attribute G_AXI_ARBURST_WIDTH : integer;
-  attribute G_AXI_ARBURST_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 2;
+  attribute G_AXI_ARBURST_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 2;
   attribute G_AXI_ARCACHE_INDEX : integer;
-  attribute G_AXI_ARCACHE_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 40;
+  attribute G_AXI_ARCACHE_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 40;
   attribute G_AXI_ARCACHE_WIDTH : integer;
-  attribute G_AXI_ARCACHE_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 4;
+  attribute G_AXI_ARCACHE_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 4;
   attribute G_AXI_ARID_INDEX : integer;
-  attribute G_AXI_ARID_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 53;
+  attribute G_AXI_ARID_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 53;
   attribute G_AXI_ARID_WIDTH : integer;
-  attribute G_AXI_ARID_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_ARID_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_ARLEN_INDEX : integer;
-  attribute G_AXI_ARLEN_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 44;
+  attribute G_AXI_ARLEN_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 44;
   attribute G_AXI_ARLEN_WIDTH : integer;
-  attribute G_AXI_ARLEN_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 8;
+  attribute G_AXI_ARLEN_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 8;
   attribute G_AXI_ARLOCK_INDEX : integer;
-  attribute G_AXI_ARLOCK_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 52;
+  attribute G_AXI_ARLOCK_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 52;
   attribute G_AXI_ARLOCK_WIDTH : integer;
-  attribute G_AXI_ARLOCK_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_ARLOCK_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_ARPAYLOAD_WIDTH : integer;
-  attribute G_AXI_ARPAYLOAD_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 62;
+  attribute G_AXI_ARPAYLOAD_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 62;
   attribute G_AXI_ARPROT_INDEX : integer;
-  attribute G_AXI_ARPROT_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 32;
+  attribute G_AXI_ARPROT_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 32;
   attribute G_AXI_ARPROT_WIDTH : integer;
-  attribute G_AXI_ARPROT_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 3;
+  attribute G_AXI_ARPROT_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 3;
   attribute G_AXI_ARQOS_INDEX : integer;
-  attribute G_AXI_ARQOS_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 54;
+  attribute G_AXI_ARQOS_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 54;
   attribute G_AXI_ARQOS_WIDTH : integer;
-  attribute G_AXI_ARQOS_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 4;
+  attribute G_AXI_ARQOS_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 4;
   attribute G_AXI_ARREGION_INDEX : integer;
-  attribute G_AXI_ARREGION_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 58;
+  attribute G_AXI_ARREGION_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 58;
   attribute G_AXI_ARREGION_WIDTH : integer;
-  attribute G_AXI_ARREGION_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 4;
+  attribute G_AXI_ARREGION_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 4;
   attribute G_AXI_ARSIZE_INDEX : integer;
-  attribute G_AXI_ARSIZE_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 35;
+  attribute G_AXI_ARSIZE_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 35;
   attribute G_AXI_ARSIZE_WIDTH : integer;
-  attribute G_AXI_ARSIZE_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 3;
+  attribute G_AXI_ARSIZE_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 3;
   attribute G_AXI_ARUSER_INDEX : integer;
-  attribute G_AXI_ARUSER_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 62;
+  attribute G_AXI_ARUSER_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 62;
   attribute G_AXI_ARUSER_WIDTH : integer;
-  attribute G_AXI_ARUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_ARUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_AWADDR_INDEX : integer;
-  attribute G_AXI_AWADDR_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_AWADDR_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_AWADDR_WIDTH : integer;
-  attribute G_AXI_AWADDR_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 32;
+  attribute G_AXI_AWADDR_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 32;
   attribute G_AXI_AWBURST_INDEX : integer;
-  attribute G_AXI_AWBURST_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 38;
+  attribute G_AXI_AWBURST_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 38;
   attribute G_AXI_AWBURST_WIDTH : integer;
-  attribute G_AXI_AWBURST_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 2;
+  attribute G_AXI_AWBURST_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 2;
   attribute G_AXI_AWCACHE_INDEX : integer;
-  attribute G_AXI_AWCACHE_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 40;
+  attribute G_AXI_AWCACHE_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 40;
   attribute G_AXI_AWCACHE_WIDTH : integer;
-  attribute G_AXI_AWCACHE_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 4;
+  attribute G_AXI_AWCACHE_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 4;
   attribute G_AXI_AWID_INDEX : integer;
-  attribute G_AXI_AWID_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 53;
+  attribute G_AXI_AWID_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 53;
   attribute G_AXI_AWID_WIDTH : integer;
-  attribute G_AXI_AWID_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_AWID_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_AWLEN_INDEX : integer;
-  attribute G_AXI_AWLEN_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 44;
+  attribute G_AXI_AWLEN_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 44;
   attribute G_AXI_AWLEN_WIDTH : integer;
-  attribute G_AXI_AWLEN_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 8;
+  attribute G_AXI_AWLEN_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 8;
   attribute G_AXI_AWLOCK_INDEX : integer;
-  attribute G_AXI_AWLOCK_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 52;
+  attribute G_AXI_AWLOCK_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 52;
   attribute G_AXI_AWLOCK_WIDTH : integer;
-  attribute G_AXI_AWLOCK_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_AWLOCK_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_AWPAYLOAD_WIDTH : integer;
-  attribute G_AXI_AWPAYLOAD_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 62;
+  attribute G_AXI_AWPAYLOAD_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 62;
   attribute G_AXI_AWPROT_INDEX : integer;
-  attribute G_AXI_AWPROT_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 32;
+  attribute G_AXI_AWPROT_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 32;
   attribute G_AXI_AWPROT_WIDTH : integer;
-  attribute G_AXI_AWPROT_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 3;
+  attribute G_AXI_AWPROT_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 3;
   attribute G_AXI_AWQOS_INDEX : integer;
-  attribute G_AXI_AWQOS_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 54;
+  attribute G_AXI_AWQOS_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 54;
   attribute G_AXI_AWQOS_WIDTH : integer;
-  attribute G_AXI_AWQOS_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 4;
+  attribute G_AXI_AWQOS_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 4;
   attribute G_AXI_AWREGION_INDEX : integer;
-  attribute G_AXI_AWREGION_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 58;
+  attribute G_AXI_AWREGION_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 58;
   attribute G_AXI_AWREGION_WIDTH : integer;
-  attribute G_AXI_AWREGION_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 4;
+  attribute G_AXI_AWREGION_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 4;
   attribute G_AXI_AWSIZE_INDEX : integer;
-  attribute G_AXI_AWSIZE_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 35;
+  attribute G_AXI_AWSIZE_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 35;
   attribute G_AXI_AWSIZE_WIDTH : integer;
-  attribute G_AXI_AWSIZE_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 3;
+  attribute G_AXI_AWSIZE_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 3;
   attribute G_AXI_AWUSER_INDEX : integer;
-  attribute G_AXI_AWUSER_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 62;
+  attribute G_AXI_AWUSER_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 62;
   attribute G_AXI_AWUSER_WIDTH : integer;
-  attribute G_AXI_AWUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_AWUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_BID_INDEX : integer;
-  attribute G_AXI_BID_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 2;
+  attribute G_AXI_BID_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 2;
   attribute G_AXI_BID_WIDTH : integer;
-  attribute G_AXI_BID_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_BID_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_BPAYLOAD_WIDTH : integer;
-  attribute G_AXI_BPAYLOAD_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 3;
+  attribute G_AXI_BPAYLOAD_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 3;
   attribute G_AXI_BRESP_INDEX : integer;
-  attribute G_AXI_BRESP_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_BRESP_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_BRESP_WIDTH : integer;
-  attribute G_AXI_BRESP_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 2;
+  attribute G_AXI_BRESP_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 2;
   attribute G_AXI_BUSER_INDEX : integer;
-  attribute G_AXI_BUSER_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 3;
+  attribute G_AXI_BUSER_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 3;
   attribute G_AXI_BUSER_WIDTH : integer;
-  attribute G_AXI_BUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_BUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_RDATA_INDEX : integer;
-  attribute G_AXI_RDATA_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_RDATA_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_RDATA_WIDTH : integer;
-  attribute G_AXI_RDATA_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 64;
+  attribute G_AXI_RDATA_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 64;
   attribute G_AXI_RID_INDEX : integer;
-  attribute G_AXI_RID_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 67;
+  attribute G_AXI_RID_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 67;
   attribute G_AXI_RID_WIDTH : integer;
-  attribute G_AXI_RID_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_RID_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_RLAST_INDEX : integer;
-  attribute G_AXI_RLAST_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 66;
+  attribute G_AXI_RLAST_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 66;
   attribute G_AXI_RLAST_WIDTH : integer;
-  attribute G_AXI_RLAST_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_RLAST_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_RPAYLOAD_WIDTH : integer;
-  attribute G_AXI_RPAYLOAD_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 68;
+  attribute G_AXI_RPAYLOAD_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 68;
   attribute G_AXI_RRESP_INDEX : integer;
-  attribute G_AXI_RRESP_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 64;
+  attribute G_AXI_RRESP_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 64;
   attribute G_AXI_RRESP_WIDTH : integer;
-  attribute G_AXI_RRESP_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 2;
+  attribute G_AXI_RRESP_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 2;
   attribute G_AXI_RUSER_INDEX : integer;
-  attribute G_AXI_RUSER_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 68;
+  attribute G_AXI_RUSER_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 68;
   attribute G_AXI_RUSER_WIDTH : integer;
-  attribute G_AXI_RUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_RUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_WDATA_INDEX : integer;
-  attribute G_AXI_WDATA_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_WDATA_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_WDATA_WIDTH : integer;
-  attribute G_AXI_WDATA_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 64;
+  attribute G_AXI_WDATA_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 64;
   attribute G_AXI_WID_INDEX : integer;
-  attribute G_AXI_WID_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 73;
+  attribute G_AXI_WID_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 73;
   attribute G_AXI_WID_WIDTH : integer;
-  attribute G_AXI_WID_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
+  attribute G_AXI_WID_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
   attribute G_AXI_WLAST_INDEX : integer;
-  attribute G_AXI_WLAST_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 72;
+  attribute G_AXI_WLAST_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 72;
   attribute G_AXI_WLAST_WIDTH : integer;
-  attribute G_AXI_WLAST_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 1;
+  attribute G_AXI_WLAST_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 1;
   attribute G_AXI_WPAYLOAD_WIDTH : integer;
-  attribute G_AXI_WPAYLOAD_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 73;
+  attribute G_AXI_WPAYLOAD_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 73;
   attribute G_AXI_WSTRB_INDEX : integer;
-  attribute G_AXI_WSTRB_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 64;
+  attribute G_AXI_WSTRB_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 64;
   attribute G_AXI_WSTRB_WIDTH : integer;
-  attribute G_AXI_WSTRB_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 8;
+  attribute G_AXI_WSTRB_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 8;
   attribute G_AXI_WUSER_INDEX : integer;
-  attribute G_AXI_WUSER_INDEX of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 73;
+  attribute G_AXI_WUSER_INDEX of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 73;
   attribute G_AXI_WUSER_WIDTH : integer;
-  attribute G_AXI_WUSER_WIDTH of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ : entity is 0;
-end \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\;
+  attribute G_AXI_WUSER_WIDTH of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is 0;
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice : entity is "axi_register_slice_v2_1_9_axi_register_slice";
+end linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice;
 
-architecture STRUCTURE of \linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\ is
+architecture STRUCTURE of linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice is
   signal \<const0>\ : STD_LOGIC;
   signal ar_pipe_n_2 : STD_LOGIC;
   signal \^m_axi_awready\ : STD_LOGIC;
@@ -2973,7 +2975,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-ar_pipe: entity work.\linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized2\
+ar_pipe: entity work.\linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized2\
      port map (
       D(61 downto 58) => s_axi_arregion(3 downto 0),
       D(57 downto 54) => s_axi_arqos(3 downto 0),
@@ -3004,7 +3006,7 @@ ar_pipe: entity work.\linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_reg
       s_axi_arready => s_axi_arready,
       s_axi_arvalid => s_axi_arvalid
     );
-r_pipe: entity work.\linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axic_register_slice__parameterized3\
+r_pipe: entity work.\linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axic_register_slice__parameterized3\
      port map (
       Q(67) => s_axi_rid(0),
       Q(66) => s_axi_rlast,
@@ -3027,7 +3029,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity \linux_bd_s00_regslice_0\ is
+entity linux_bd_s00_regslice_0 is
   port (
     aclk : in STD_LOGIC;
     aresetn : in STD_LOGIC;
@@ -3065,16 +3067,16 @@ entity \linux_bd_s00_regslice_0\ is
     m_axi_rready : out STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of \linux_bd_s00_regslice_0\ : entity is true;
+  attribute NotValidForBitStream of linux_bd_s00_regslice_0 : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of \linux_bd_s00_regslice_0\ : entity is "linux_bd_s00_regslice_0,axi_register_slice_v2_1_8_axi_register_slice,{}";
+  attribute CHECK_LICENSE_TYPE of linux_bd_s00_regslice_0 : entity is "linux_bd_s00_regslice_0,axi_register_slice_v2_1_9_axi_register_slice,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of \linux_bd_s00_regslice_0\ : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of linux_bd_s00_regslice_0 : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of \linux_bd_s00_regslice_0\ : entity is "axi_register_slice_v2_1_8_axi_register_slice,Vivado 2016.1";
-end \linux_bd_s00_regslice_0\;
+  attribute X_CORE_INFO of linux_bd_s00_regslice_0 : entity is "axi_register_slice_v2_1_9_axi_register_slice,Vivado 2016.2";
+end linux_bd_s00_regslice_0;
 
-architecture STRUCTURE of \linux_bd_s00_regslice_0\ is
+architecture STRUCTURE of linux_bd_s00_regslice_0 is
   signal NLW_inst_m_axi_awvalid_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_m_axi_bready_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_m_axi_wlast_UNCONNECTED : STD_LOGIC;
@@ -3290,7 +3292,7 @@ architecture STRUCTURE of \linux_bd_s00_regslice_0\ is
   attribute G_AXI_WUSER_WIDTH : integer;
   attribute G_AXI_WUSER_WIDTH of inst : label is 0;
 begin
-inst: entity work.\linux_bd_s00_regslice_0_axi_register_slice_v2_1_8_axi_register_slice\
+inst: entity work.linux_bd_s00_regslice_0_axi_register_slice_v2_1_9_axi_register_slice
      port map (
       aclk => aclk,
       aresetn => aresetn,

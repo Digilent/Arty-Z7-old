@@ -34,58 +34,58 @@ preplace inst axi_gpio_sw -pg 1 -lvl 6 -y 750 -defaultsOSRD
 preplace inst xadc_wiz_0 -pg 1 -lvl 2 -y -290 -defaultsOSRD
 preplace inst axi_gpio_led -pg 1 -lvl 6 -y 190 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 5 -y 590 -defaultsOSRD
-preplace inst rgb2dvi_0 -pg 1 -lvl 6 -y 60 -defaultsOSRD
 preplace inst axi_gpio_hdmi -pg 1 -lvl 6 -y 310 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 6 -y 60 -defaultsOSRD
 preplace inst xlconcat_1 -pg 1 -lvl 7 -y 1350 -defaultsOSRD
 preplace inst axis_subset_converter_0 -pg 1 -lvl 4 -y 520 -defaultsOSRD
 preplace inst axi_dynclk_0 -pg 1 -lvl 3 -y 360 -defaultsOSRD
 preplace inst axi_gpio_shield_1 -pg 1 -lvl 6 -y 450 -defaultsOSRD
-preplace inst rst_processing_system7_0_142M -pg 1 -lvl 4 -y 890 -defaultsOSRD
-preplace inst axi_gpio_shield_2 -pg 1 -lvl 6 -y 570 -defaultsOSRD
 preplace inst axi_mem_intercon -pg 1 -lvl 5 -y 860 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 6 -y 1160 -defaultsOSRD
+preplace inst axi_gpio_shield_2 -pg 1 -lvl 6 -y 570 -defaultsOSRD
+preplace inst rst_processing_system7_0_142M -pg 1 -lvl 4 -y 890 -defaultsOSRD
 preplace inst processing_system7_0_axi_periph -pg 1 -lvl 2 -y 410 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 6 -y 1160 -defaultsOSRD
 preplace netloc Vaux12_1 1 0 2 NJ -250 NJ
 preplace netloc Vaux6_1 1 0 2 NJ -310 NJ
 preplace netloc Vaux0_1 1 0 2 NJ -370 NJ
 preplace netloc processing_system7_0_DDR 1 6 2 NJ 1060 N
 preplace netloc axi_gpio_hdmi_ip2intc_irpt 1 4 3 1600 700 NJ 820 2520
 preplace netloc axis_subset_converter_0_M_AXIS 1 4 1 1510
-preplace netloc axi_dynclk_0_PXL_CLK_O 1 3 3 1090 0 1570 0 1990
+preplace netloc axi_dynclk_0_PXL_CLK_O 1 3 3 1090 0 1570 0 1970
 preplace netloc rst_processing_system7_0_142M_peripheral_aresetn 1 4 1 1600
 preplace netloc axi_gpio_hdmi_GPIO 1 6 2 NJ 300 2810
-preplace netloc processing_system7_0_axi_periph_M08_AXI 1 2 4 NJ 630 NJ 630 NJ 480 1940
-preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 730
-preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 4 730 270 NJ 280 NJ 280 NJ
-preplace netloc processing_system7_0_axi_periph_M07_AXI 1 1 2 380 -460 690
-preplace netloc v_axi4s_vid_out_0_vid_io_out 1 5 1 1920
+preplace netloc processing_system7_0_axi_periph_M08_AXI 1 2 4 NJ 630 NJ 630 NJ 480 1920
+preplace netloc processing_system7_0_axi_periph_M03_AXI 1 2 1 710
+preplace netloc processing_system7_0_axi_periph_M00_AXI 1 2 4 710 270 NJ 280 NJ 280 NJ
+preplace netloc processing_system7_0_axi_periph_M07_AXI 1 1 2 380 -460 670
+preplace netloc v_axi4s_vid_out_0_vid_io_out 1 5 1 1900
 preplace netloc axi_vdma_0_M_AXI_MM2S 1 3 2 1100 600 NJ
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 6 380 130 NJ 130 NJ 390 NJ 390 NJ 380 2550
-preplace netloc axi_dynclk_0_LOCKED_O 1 3 3 NJ 380 NJ 380 1930
+preplace netloc axi_dynclk_0_LOCKED_O 1 3 3 NJ 380 NJ 380 1910
 preplace netloc Vp_Vn_1 1 0 2 NJ -390 NJ
 preplace netloc axi_vdma_0_M_AXIS_MM2S 1 3 1 1120
-preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 1 770
+preplace netloc processing_system7_0_axi_periph_M05_AXI 1 2 1 750
 preplace netloc xadc_wiz_0_ip2intc_irpt 1 2 3 NJ -400 NJ -400 1550
 preplace netloc processing_system7_0_SPI0_SS2_O 1 6 1 2560
 preplace netloc v_tc_0_irq 1 4 1 1540
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 7 10 740 NJ 740 NJ 740 1150 620 NJ 470 NJ 640 2540
 preplace netloc processing_system7_0_IIC_0 1 6 2 NJ 1100 N
-preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1920
+preplace netloc axi_mem_intercon_M00_AXI 1 5 1 1900
 preplace netloc axi_gpio_shield_1_ip2intc_irpt 1 4 3 1590 730 NJ 850 2530
-preplace netloc axi_dynclk_0_PXL_CLK_5X_O 1 3 3 NJ 360 NJ 360 1940
+preplace netloc axi_dynclk_0_PXL_CLK_5X_O 1 3 3 NJ 360 NJ 360 1920
 preplace netloc Vaux5_1 1 0 2 NJ -330 NJ
 preplace netloc rgb2dvi_0_TMDS 1 6 2 NJ 60 2820
 preplace netloc processing_system7_0_IIC_1 1 6 2 NJ 1120 N
-preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 4 740 450 NJ 450 NJ 450 NJ
+preplace netloc processing_system7_0_axi_periph_M02_AXI 1 2 4 720 450 NJ 450 NJ 450 NJ
 preplace netloc axi_gpio_shield_2_ip2intc_irpt 1 4 3 1610 710 NJ 830 2510
 preplace netloc rst_processing_system7_0_142M_interconnect_aresetn 1 4 1 1560
-preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 5 370 110 760 110 1140 10 NJ 10 1980
+preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 1 5 370 110 740 110 1140 10 NJ 10 1960
 preplace netloc Vaux8_1 1 0 2 NJ -290 NJ
 preplace netloc processing_system7_0_axi_periph_M06_AXI 1 2 4 NJ 280 NJ 290 NJ 290 N
 preplace netloc processing_system7_0_SPI0_SS1_O 1 6 1 2570
-preplace netloc v_axi4s_vid_out_0_vtg_ce 1 3 3 1150 300 NJ 300 1920
+preplace netloc v_axi4s_vid_out_0_vtg_ce 1 3 3 1150 300 NJ 300 1900
 preplace netloc xlconstant_0_dout 1 3 1 NJ
-preplace netloc xlconcat_0_dout 1 5 1 1930
+preplace netloc xlconcat_0_dout 1 5 1 1910
 preplace netloc axi_gpio_0_GPIO2 1 6 2 NJ 750 N
 preplace netloc processing_system7_0_FIXED_IO 1 6 2 NJ 1080 N
 preplace netloc axi_vdma_0_mm2s_introut 1 3 2 1090 590 NJ
@@ -97,14 +97,14 @@ preplace netloc Vaux1_1 1 0 2 NJ -350 NJ
 preplace netloc processing_system7_0_GPIO_0 1 6 2 NJ 1040 N
 preplace netloc axi_gpio_2_GPIO 1 6 2 NJ 190 2820
 preplace netloc rst_processing_system7_0_100M_interconnect_aresetn 1 1 1 350
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 10 140 360 120 750 120 1130 270 NJ 270 1990 990 2500
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 7 10 140 360 120 730 120 1130 270 NJ 270 1970 990 2500
 preplace netloc axi_gpio_shield_2_GPIO 1 6 2 NJ 560 NJ
 preplace netloc processing_system7_0_SPI_0 1 6 2 NJ 1140 N
 preplace netloc axi_gpio_1_GPIO 1 6 2 NJ 440 2810
 preplace netloc v_tc_0_vtiming_out 1 4 1 1540
-preplace netloc processing_system7_0_FCLK_CLK1 1 2 5 770 730 1140 610 1520 740 1910 1330 2500
+preplace netloc processing_system7_0_FCLK_CLK1 1 2 5 750 730 1140 610 1520 740 1890 1330 2500
 preplace netloc Vaux15_1 1 0 2 NJ -210 NJ
-preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 2 710 60 NJ
+preplace netloc processing_system7_0_axi_periph_M04_AXI 1 2 2 690 60 NJ
 preplace netloc processing_system7_0_axi_periph_M01_AXI 1 2 4 NJ 440 NJ 430 NJ 430 N
 levelinfo -pg 1 -10 190 540 930 1350 1760 2300 2720 2840 -top -470 -bot 1410
 ",

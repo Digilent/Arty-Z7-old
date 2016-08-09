@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:34:53 2016
+-- Date        : Tue Aug 09 00:34:49 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_xadc_wiz_0_0/linux_bd_xadc_wiz_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top linux_bd_xadc_wiz_0_0 -prefix linux_bd_xadc_wiz_0_0_
+--               linux_bd_xadc_wiz_0_0_sim_netlist.vhdl
 -- Design      : linux_bd_xadc_wiz_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder is
+entity \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder\ is
   port (
     dwe_d1_reg : out STD_LOGIC;
     hard_macro_rst_reg_reg : out STD_LOGIC;
@@ -110,11 +110,9 @@ entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder is
     s_axi_wdata : in STD_LOGIC_VECTOR ( 1 downto 0 );
     hard_macro_rst_reg : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder : entity is "linux_bd_xadc_wiz_0_0_address_decoder";
-end linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder;
+end \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder\ is
   signal Bus_RNW_reg_i_1_n_0 : STD_LOGIC;
   signal \GEN_BKEND_CE_REGISTERS[16].ce_out_i[16]_i_1_n_0\ : STD_LOGIC;
   signal \GEN_BKEND_CE_REGISTERS[17].ce_out_i[17]_i_1_n_0\ : STD_LOGIC;
@@ -1739,7 +1737,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control is
+entity \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control\ is
   port (
     irpt_wrack_d1 : out STD_LOGIC;
     \GEN_IP_IRPT_STATUS_REG[0].GEN_REG_STATUS.ip_irpt_status_reg_reg[0]_0\ : out STD_LOGIC;
@@ -1786,11 +1784,9 @@ entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control is
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 0 to 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control : entity is "linux_bd_xadc_wiz_0_0_interrupt_control";
-end linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control;
+end \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control\ is
   signal \DO_IRPT_INPUT[10].GEN_POS_EDGE_DETECT.irpt_dly1_reg_n_0\ : STD_LOGIC;
   signal \DO_IRPT_INPUT[10].GEN_POS_EDGE_DETECT.irpt_dly2_reg_n_0\ : STD_LOGIC;
   signal \DO_IRPT_INPUT[11].GEN_POS_EDGE_DETECT.irpt_dly1_reg_n_0\ : STD_LOGIC;
@@ -2761,7 +2757,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset is
+entity \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset\ is
   port (
     sw_rst_cond_d1 : out STD_LOGIC;
     wrack : out STD_LOGIC;
@@ -2780,11 +2776,9 @@ entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset is
     hard_macro_rst_reg : in STD_LOGIC;
     D : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset : entity is "linux_bd_xadc_wiz_0_0_soft_reset";
-end linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset;
+end \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset\ is
   signal FF_WRACK_i_1_n_0 : STD_LOGIC;
   signal \RESET_FLOPS[10].RST_FLOPS_i_1_n_0\ : STD_LOGIC;
   signal \RESET_FLOPS[11].RST_FLOPS_i_1_n_0\ : STD_LOGIC;
@@ -3324,7 +3318,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp is
+entity \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp\ is
   port (
     D : out STD_LOGIC_VECTOR ( 6 downto 0 );
     eoc_out : out STD_LOGIC;
@@ -3378,11 +3372,9 @@ entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp is
     bus2ip_reset_active_high : in STD_LOGIC;
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp : entity is "linux_bd_xadc_wiz_0_0_xadc_core_drp";
-end linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp;
+end \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp\ is
   signal \^d\ : STD_LOGIC_VECTOR ( 6 downto 0 );
   signal DEN : STD_LOGIC;
   signal DWE : STD_LOGIC;
@@ -4186,7 +4178,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment is
+entity \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment\ is
   port (
     dwe_d1_reg : out STD_LOGIC;
     SR : out STD_LOGIC_VECTOR ( 0 to 0 );
@@ -4292,11 +4284,9 @@ entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment is
     hard_macro_rst_reg : in STD_LOGIC;
     \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[0]\ : in STD_LOGIC_VECTOR ( 18 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment : entity is "linux_bd_xadc_wiz_0_0_slave_attachment";
-end linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment;
+end \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment\ is
   signal \INCLUDE_DPHASE_TIMER.dpto_cnt[6]_i_3_n_0\ : STD_LOGIC;
   signal \INCLUDE_DPHASE_TIMER.dpto_cnt_reg_n_0_[0]\ : STD_LOGIC;
   signal \INCLUDE_DPHASE_TIMER.dpto_cnt_reg_n_0_[1]\ : STD_LOGIC;
@@ -4488,7 +4478,7 @@ begin
       Q => timeout,
       R => p_2_out
     );
-I_DECODER: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder
+I_DECODER: entity work.\linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_address_decoder\
      port map (
       D(18 downto 0) => D(18 downto 0),
       E(0) => E(0),
@@ -4995,7 +4985,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif is
+entity \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif\ is
   port (
     dwe_d1_reg : out STD_LOGIC;
     bus2ip_reset_active_high : out STD_LOGIC;
@@ -5099,15 +5089,13 @@ entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif is
     hard_macro_rst_reg : in STD_LOGIC;
     \INTR_CTRLR_GEN_I.ip2bus_data_int_reg[0]\ : in STD_LOGIC_VECTOR ( 18 downto 0 )
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif : entity is "linux_bd_xadc_wiz_0_0_axi_lite_ipif";
-end linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif;
+end \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif\ is
   signal \s_axi_wdata_1__s_net_1\ : STD_LOGIC;
 begin
   \s_axi_wdata_1__s_net_1\ <= \s_axi_wdata_1__s_port_]\;
-I_SLAVE_ATTACHMENT: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment
+I_SLAVE_ATTACHMENT: entity work.\linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_slave_attachment\
      port map (
       D(18 downto 0) => D(18 downto 0),
       E(0) => E(0),
@@ -5218,7 +5206,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc is
+entity \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -5268,28 +5256,26 @@ entity linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc is
     vn_in : in STD_LOGIC
   );
   attribute C_FAMILY : string;
-  attribute C_FAMILY of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is "virtex7";
+  attribute C_FAMILY of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is "virtex7";
   attribute C_INCLUDE_INTR : integer;
-  attribute C_INCLUDE_INTR of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is 1;
+  attribute C_INCLUDE_INTR of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is 1;
   attribute C_INSTANCE : string;
-  attribute C_INSTANCE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is "linux_bd_xadc_wiz_0_0_axi_xadc";
+  attribute C_INSTANCE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is "linux_bd_xadc_wiz_0_0_axi_xadc";
   attribute C_SIM_MONITOR_FILE : string;
-  attribute C_SIM_MONITOR_FILE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is "design.txt";
+  attribute C_SIM_MONITOR_FILE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is "design.txt";
   attribute C_S_AXI_ADDR_WIDTH : integer;
-  attribute C_S_AXI_ADDR_WIDTH of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is 11;
+  attribute C_S_AXI_ADDR_WIDTH of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is 11;
   attribute C_S_AXI_DATA_WIDTH : integer;
-  attribute C_S_AXI_DATA_WIDTH of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is 32;
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is "linux_bd_xadc_wiz_0_0_axi_xadc";
+  attribute C_S_AXI_DATA_WIDTH of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is 32;
   attribute hdl : string;
-  attribute hdl of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is "VHDL";
+  attribute hdl of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is "VHDL";
   attribute ip_group : string;
-  attribute ip_group of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is "LOGICORE";
+  attribute ip_group of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is "LOGICORE";
   attribute iptype : string;
-  attribute iptype of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc : entity is "PERIPHERAL";
-end linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc;
+  attribute iptype of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ : entity is "PERIPHERAL";
+end \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\ is
   signal \<const0>\ : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_0 : STD_LOGIC;
   signal AXI_LITE_IPIF_I_n_12 : STD_LOGIC;
@@ -5446,7 +5432,7 @@ begin
   s_axi_rresp(1) <= \^s_axi_rresp\(1);
   s_axi_rresp(0) <= \<const0>\;
   s_axi_wready <= \^s_axi_wready\;
-AXI_LITE_IPIF_I: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif
+AXI_LITE_IPIF_I: entity work.\linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lite_ipif\
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
       D(18) => intr_ip2bus_data(0),
@@ -5589,7 +5575,7 @@ AXI_LITE_IPIF_I: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_lit
       sw_rst_cond_d1 => sw_rst_cond_d1,
       wrack => wrack
     );
-AXI_XADC_CORE_I: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp
+AXI_XADC_CORE_I: entity work.\linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_xadc_core_drp\
      port map (
       Bus_RNW_reg => \I_SLAVE_ATTACHMENT/I_DECODER/Bus_RNW_reg\,
       Bus_RNW_reg_reg => AXI_LITE_IPIF_I_n_60,
@@ -5676,7 +5662,7 @@ GND: unisim.vcomponents.GND
      port map (
       G => \<const0>\
     );
-\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I\: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control
+\INTR_CTRLR_GEN_I.INTERRUPT_CONTROL_I\: entity work.\linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_interrupt_control\
      port map (
       D(0) => jtaglocked_i,
       E(0) => irpt_wrack_d11,
@@ -6023,7 +6009,7 @@ GND: unisim.vcomponents.GND
       Q => ip2bus_wrack,
       R => reset2ip_reset
     );
-SOFT_RESET_I: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset
+SOFT_RESET_I: entity work.\linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_soft_reset\
      port map (
       D(0) => jtaglocked_i,
       RESET => RESET,
@@ -6095,7 +6081,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_xadc_wiz_0_0 is
+entity \linux_bd_xadc_wiz_0_0\ is
   port (
     s_axi_aclk : in STD_LOGIC;
     s_axi_aresetn : in STD_LOGIC;
@@ -6150,10 +6136,10 @@ entity linux_bd_xadc_wiz_0_0 is
     vn_in : in STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of linux_bd_xadc_wiz_0_0 : entity is true;
-end linux_bd_xadc_wiz_0_0;
+  attribute NotValidForBitStream of \linux_bd_xadc_wiz_0_0\ : entity is true;
+end \linux_bd_xadc_wiz_0_0\;
 
-architecture STRUCTURE of linux_bd_xadc_wiz_0_0 is
+architecture STRUCTURE of \linux_bd_xadc_wiz_0_0\ is
   signal NLW_U0_alarm_out_UNCONNECTED : STD_LOGIC_VECTOR ( 6 downto 3 );
   attribute C_FAMILY : string;
   attribute C_FAMILY of U0 : label is "virtex7";
@@ -6174,7 +6160,7 @@ architecture STRUCTURE of linux_bd_xadc_wiz_0_0 is
   attribute iptype : string;
   attribute iptype of U0 : label is "PERIPHERAL";
 begin
-U0: entity work.linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc
+U0: entity work.\linux_bd_xadc_wiz_0_0_linux_bd_xadc_wiz_0_0_axi_xadc\
      port map (
       alarm_out(7) => alarm_out,
       alarm_out(6) => NLW_U0_alarm_out_UNCONNECTED(6),

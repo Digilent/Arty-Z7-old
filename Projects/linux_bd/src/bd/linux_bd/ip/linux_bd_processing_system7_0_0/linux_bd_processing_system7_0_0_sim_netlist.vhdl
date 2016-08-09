@@ -1,10 +1,10 @@
 -- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
--- Date        : Tue Aug 09 00:30:53 2016
+-- Date        : Tue Aug 09 00:30:44 2016
 -- Host        : WK73 running 64-bit Service Pack 1  (build 7601)
--- Command     : write_vhdl -force -mode funcsim
---               C:/sam_work/git/digilent/Arty-Z7/Projects/linux_bd/src/bd/linux_bd/ip/linux_bd_processing_system7_0_0/linux_bd_processing_system7_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top linux_bd_processing_system7_0_0 -prefix linux_bd_processing_system7_0_0_
+--               linux_bd_processing_system7_0_0_sim_netlist.vhdl
 -- Design      : linux_bd_processing_system7_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -14,7 +14,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 is
+entity \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ is
   port (
     CAN0_PHY_TX : out STD_LOGIC;
     CAN0_PHY_RX : in STD_LOGIC;
@@ -703,122 +703,120 @@ entity linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system
     PS_PORB : inout STD_LOGIC
   );
   attribute C_DM_WIDTH : integer;
-  attribute C_DM_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 4;
+  attribute C_DM_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 4;
   attribute C_DQS_WIDTH : integer;
-  attribute C_DQS_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 4;
+  attribute C_DQS_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 4;
   attribute C_DQ_WIDTH : integer;
-  attribute C_DQ_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 32;
+  attribute C_DQ_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 32;
   attribute C_EMIO_GPIO_WIDTH : integer;
-  attribute C_EMIO_GPIO_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_EMIO_GPIO_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 6;
   attribute C_EN_EMIO_ENET0 : integer;
-  attribute C_EN_EMIO_ENET0 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_EN_EMIO_ENET0 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_EN_EMIO_ENET1 : integer;
-  attribute C_EN_EMIO_ENET1 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_EN_EMIO_ENET1 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_EN_EMIO_PJTAG : integer;
-  attribute C_EN_EMIO_PJTAG of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_EN_EMIO_PJTAG of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_EN_EMIO_TRACE : integer;
-  attribute C_EN_EMIO_TRACE of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_EN_EMIO_TRACE of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_FCLK_CLK0_BUF : string;
-  attribute C_FCLK_CLK0_BUF of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "true";
+  attribute C_FCLK_CLK0_BUF of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "true";
   attribute C_FCLK_CLK1_BUF : string;
-  attribute C_FCLK_CLK1_BUF of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "true";
+  attribute C_FCLK_CLK1_BUF of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "true";
   attribute C_FCLK_CLK2_BUF : string;
-  attribute C_FCLK_CLK2_BUF of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "false";
+  attribute C_FCLK_CLK2_BUF of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "false";
   attribute C_FCLK_CLK3_BUF : string;
-  attribute C_FCLK_CLK3_BUF of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "false";
+  attribute C_FCLK_CLK3_BUF of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "false";
   attribute C_INCLUDE_ACP_TRANS_CHECK : integer;
-  attribute C_INCLUDE_ACP_TRANS_CHECK of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_INCLUDE_ACP_TRANS_CHECK of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_INCLUDE_TRACE_BUFFER : integer;
-  attribute C_INCLUDE_TRACE_BUFFER of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_INCLUDE_TRACE_BUFFER of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_IRQ_F2P_MODE : string;
-  attribute C_IRQ_F2P_MODE of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "DIRECT";
+  attribute C_IRQ_F2P_MODE of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "DIRECT";
   attribute C_MIO_PRIMITIVE : integer;
-  attribute C_MIO_PRIMITIVE of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 54;
+  attribute C_MIO_PRIMITIVE of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 54;
   attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP : integer;
-  attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_M_AXI_GP0_ENABLE_STATIC_REMAP of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_M_AXI_GP0_ID_WIDTH : integer;
-  attribute C_M_AXI_GP0_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
+  attribute C_M_AXI_GP0_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 12;
   attribute C_M_AXI_GP0_THREAD_ID_WIDTH : integer;
-  attribute C_M_AXI_GP0_THREAD_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
+  attribute C_M_AXI_GP0_THREAD_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 12;
   attribute C_M_AXI_GP1_ENABLE_STATIC_REMAP : integer;
-  attribute C_M_AXI_GP1_ENABLE_STATIC_REMAP of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_M_AXI_GP1_ENABLE_STATIC_REMAP of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_M_AXI_GP1_ID_WIDTH : integer;
-  attribute C_M_AXI_GP1_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
+  attribute C_M_AXI_GP1_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 12;
   attribute C_M_AXI_GP1_THREAD_ID_WIDTH : integer;
-  attribute C_M_AXI_GP1_THREAD_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
+  attribute C_M_AXI_GP1_THREAD_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 12;
   attribute C_NUM_F2P_INTR_INPUTS : integer;
-  attribute C_NUM_F2P_INTR_INPUTS of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 7;
+  attribute C_NUM_F2P_INTR_INPUTS of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 7;
   attribute C_PACKAGE_NAME : string;
-  attribute C_PACKAGE_NAME of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "clg400";
+  attribute C_PACKAGE_NAME of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "clg400";
   attribute C_PS7_SI_REV : string;
-  attribute C_PS7_SI_REV of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "PRODUCTION";
+  attribute C_PS7_SI_REV of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "PRODUCTION";
   attribute C_S_AXI_ACP_ARUSER_VAL : integer;
-  attribute C_S_AXI_ACP_ARUSER_VAL of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 31;
+  attribute C_S_AXI_ACP_ARUSER_VAL of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 31;
   attribute C_S_AXI_ACP_AWUSER_VAL : integer;
-  attribute C_S_AXI_ACP_AWUSER_VAL of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 31;
+  attribute C_S_AXI_ACP_AWUSER_VAL of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 31;
   attribute C_S_AXI_ACP_ID_WIDTH : integer;
-  attribute C_S_AXI_ACP_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 3;
+  attribute C_S_AXI_ACP_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 3;
   attribute C_S_AXI_GP0_ID_WIDTH : integer;
-  attribute C_S_AXI_GP0_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_S_AXI_GP0_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 6;
   attribute C_S_AXI_GP1_ID_WIDTH : integer;
-  attribute C_S_AXI_GP1_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_S_AXI_GP1_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 6;
   attribute C_S_AXI_HP0_DATA_WIDTH : integer;
-  attribute C_S_AXI_HP0_DATA_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 64;
+  attribute C_S_AXI_HP0_DATA_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 64;
   attribute C_S_AXI_HP0_ID_WIDTH : integer;
-  attribute C_S_AXI_HP0_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_S_AXI_HP0_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 6;
   attribute C_S_AXI_HP1_DATA_WIDTH : integer;
-  attribute C_S_AXI_HP1_DATA_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 64;
+  attribute C_S_AXI_HP1_DATA_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 64;
   attribute C_S_AXI_HP1_ID_WIDTH : integer;
-  attribute C_S_AXI_HP1_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_S_AXI_HP1_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 6;
   attribute C_S_AXI_HP2_DATA_WIDTH : integer;
-  attribute C_S_AXI_HP2_DATA_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 64;
+  attribute C_S_AXI_HP2_DATA_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 64;
   attribute C_S_AXI_HP2_ID_WIDTH : integer;
-  attribute C_S_AXI_HP2_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_S_AXI_HP2_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 6;
   attribute C_S_AXI_HP3_DATA_WIDTH : integer;
-  attribute C_S_AXI_HP3_DATA_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 64;
+  attribute C_S_AXI_HP3_DATA_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 64;
   attribute C_S_AXI_HP3_ID_WIDTH : integer;
-  attribute C_S_AXI_HP3_ID_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 6;
+  attribute C_S_AXI_HP3_ID_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 6;
   attribute C_TRACE_BUFFER_CLOCK_DELAY : integer;
-  attribute C_TRACE_BUFFER_CLOCK_DELAY of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 12;
+  attribute C_TRACE_BUFFER_CLOCK_DELAY of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 12;
   attribute C_TRACE_BUFFER_FIFO_SIZE : integer;
-  attribute C_TRACE_BUFFER_FIFO_SIZE of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 128;
+  attribute C_TRACE_BUFFER_FIFO_SIZE of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 128;
   attribute C_TRACE_INTERNAL_WIDTH : integer;
-  attribute C_TRACE_INTERNAL_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 2;
+  attribute C_TRACE_INTERNAL_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 2;
   attribute C_TRACE_PIPELINE_WIDTH : integer;
-  attribute C_TRACE_PIPELINE_WIDTH of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 8;
+  attribute C_TRACE_PIPELINE_WIDTH of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 8;
   attribute C_USE_AXI_NONSECURE : integer;
-  attribute C_USE_AXI_NONSECURE of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_AXI_NONSECURE of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_DEFAULT_ACP_USER_VAL : integer;
-  attribute C_USE_DEFAULT_ACP_USER_VAL of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_DEFAULT_ACP_USER_VAL of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_M_AXI_GP0 : integer;
-  attribute C_USE_M_AXI_GP0 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 1;
+  attribute C_USE_M_AXI_GP0 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 1;
   attribute C_USE_M_AXI_GP1 : integer;
-  attribute C_USE_M_AXI_GP1 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_M_AXI_GP1 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_S_AXI_ACP : integer;
-  attribute C_USE_S_AXI_ACP of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_S_AXI_ACP of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_S_AXI_GP0 : integer;
-  attribute C_USE_S_AXI_GP0 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_S_AXI_GP0 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_S_AXI_GP1 : integer;
-  attribute C_USE_S_AXI_GP1 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_S_AXI_GP1 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_S_AXI_HP0 : integer;
-  attribute C_USE_S_AXI_HP0 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 1;
+  attribute C_USE_S_AXI_HP0 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 1;
   attribute C_USE_S_AXI_HP1 : integer;
-  attribute C_USE_S_AXI_HP1 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_S_AXI_HP1 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_S_AXI_HP2 : integer;
-  attribute C_USE_S_AXI_HP2 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_S_AXI_HP2 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute C_USE_S_AXI_HP3 : integer;
-  attribute C_USE_S_AXI_HP3 of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
+  attribute C_USE_S_AXI_HP3 of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
   attribute HW_HANDOFF : string;
-  attribute HW_HANDOFF of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "linux_bd_processing_system7_0_0.hwdef";
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "processing_system7_v5_5_processing_system7";
+  attribute HW_HANDOFF of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "linux_bd_processing_system7_0_0.hwdef";
   attribute POWER : string;
-  attribute POWER of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={650} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={525} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={4} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={0} ioBank={} clockFreq={108.333336} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={1} ioBank={} clockFreq={108.333336} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1300.000} /><PLL domain={Memory} vco={1050.000} /><PLL domain={IO} vco={1000.000} /><AXI interface={S_AXI_HP0} dataWidth={64} clockFreq={10} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={10} usageRate={0.5} />/>";
+  attribute POWER of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is "<PROCESSOR name={system} numA9Cores={2} clockFreq={650} load={0.5} /><MEMORY name={code} memType={DDR3} dataWidth={16} clockFreq={525} readRate={0.5} writeRate={0.5} /><IO interface={GPIO_Bank_1} ioStandard={LVCMOS18} bidis={4} ioBank={Vcco_p1} clockFreq={1} usageRate={0.5} /><IO interface={GPIO_Bank_0} ioStandard={LVCMOS33} bidis={6} ioBank={Vcco_p0} clockFreq={1} usageRate={0.5} /><IO interface={SPI} ioStandard={} bidis={0} ioBank={} clockFreq={166.666672} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={0} ioBank={} clockFreq={108.333336} usageRate={0.5} /><IO interface={I2C} ioStandard={} bidis={1} ioBank={} clockFreq={108.333336} usageRate={0.5} /><IO interface={UART} ioStandard={LVCMOS33} bidis={2} ioBank={Vcco_p0} clockFreq={100.000000} usageRate={0.5} /><IO interface={SD} ioStandard={LVCMOS18} bidis={7} ioBank={Vcco_p1} clockFreq={50.000000} usageRate={0.5} /><IO interface={USB} ioStandard={LVCMOS18} bidis={12} ioBank={Vcco_p1} clockFreq={60} usageRate={0.5} /><IO interface={GigE} ioStandard={LVCMOS18} bidis={14} ioBank={Vcco_p1} clockFreq={125.000000} usageRate={0.5} /><IO interface={QSPI} ioStandard={LVCMOS33} bidis={7} ioBank={Vcco_p0} clockFreq={200} usageRate={0.5} /><PLL domain={Processor} vco={1300.000} /><PLL domain={Memory} vco={1050.000} /><PLL domain={IO} vco={1000.000} /><AXI interface={S_AXI_HP0} dataWidth={64} clockFreq={10} usageRate={0.5} /><AXI interface={M_AXI_GP0} dataWidth={32} clockFreq={10} usageRate={0.5} />/>";
   attribute USE_TRACE_DATA_EDGE_DETECTOR : integer;
-  attribute USE_TRACE_DATA_EDGE_DETECTOR of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 : entity is 0;
-end linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7;
+  attribute USE_TRACE_DATA_EDGE_DETECTOR of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ : entity is 0;
+end \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\;
 
-architecture STRUCTURE of linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7 is
+architecture STRUCTURE of \linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\ is
   signal \<const0>\ : STD_LOGIC;
   signal ENET0_MDIO_T_n : STD_LOGIC;
   signal ENET1_MDIO_T_n : STD_LOGIC;
@@ -2642,7 +2640,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 library UNISIM;
 use UNISIM.VCOMPONENTS.ALL;
-entity linux_bd_processing_system7_0_0 is
+entity \linux_bd_processing_system7_0_0\ is
   port (
     GPIO_I : in STD_LOGIC_VECTOR ( 5 downto 0 );
     GPIO_O : out STD_LOGIC_VECTOR ( 5 downto 0 );
@@ -2787,16 +2785,16 @@ entity linux_bd_processing_system7_0_0 is
     PS_PORB : inout STD_LOGIC
   );
   attribute NotValidForBitStream : boolean;
-  attribute NotValidForBitStream of linux_bd_processing_system7_0_0 : entity is true;
+  attribute NotValidForBitStream of \linux_bd_processing_system7_0_0\ : entity is true;
   attribute CHECK_LICENSE_TYPE : string;
-  attribute CHECK_LICENSE_TYPE of linux_bd_processing_system7_0_0 : entity is "linux_bd_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}";
+  attribute CHECK_LICENSE_TYPE of \linux_bd_processing_system7_0_0\ : entity is "linux_bd_processing_system7_0_0,processing_system7_v5_5_processing_system7,{}";
   attribute DowngradeIPIdentifiedWarnings : string;
-  attribute DowngradeIPIdentifiedWarnings of linux_bd_processing_system7_0_0 : entity is "yes";
+  attribute DowngradeIPIdentifiedWarnings of \linux_bd_processing_system7_0_0\ : entity is "yes";
   attribute X_CORE_INFO : string;
-  attribute X_CORE_INFO of linux_bd_processing_system7_0_0 : entity is "processing_system7_v5_5_processing_system7,Vivado 2016.1";
-end linux_bd_processing_system7_0_0;
+  attribute X_CORE_INFO of \linux_bd_processing_system7_0_0\ : entity is "processing_system7_v5_5_processing_system7,Vivado 2016.1";
+end \linux_bd_processing_system7_0_0\;
 
-architecture STRUCTURE of linux_bd_processing_system7_0_0 is
+architecture STRUCTURE of \linux_bd_processing_system7_0_0\ is
   signal NLW_inst_CAN0_PHY_TX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_CAN1_PHY_TX_UNCONNECTED : STD_LOGIC;
   signal NLW_inst_DMA0_DAVALID_UNCONNECTED : STD_LOGIC;
@@ -3441,7 +3439,7 @@ pullup_MIO_53inst: unisim.vcomponents.PULLUP
     port map (
       O => MIO(53)
     );
-inst: entity work.linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7
+inst: entity work.\linux_bd_processing_system7_0_0_processing_system7_v5_5_processing_system7\
      port map (
       CAN0_PHY_RX => '0',
       CAN0_PHY_TX => NLW_inst_CAN0_PHY_TX_UNCONNECTED,
