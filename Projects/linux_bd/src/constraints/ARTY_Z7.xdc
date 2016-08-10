@@ -110,12 +110,12 @@ set_property -dict { PACKAGE_PIN M18   IOSTANDARD LVCMOS33 } [get_ports { hdmi_d
 #set_property -dict { PACKAGE_PIN P14   IOSTANDARD LVCMOS33 } [get_ports { led[1] }]; #IO_L6P_T0_34 Sch=led[1]
 #set_property -dict { PACKAGE_PIN N16   IOSTANDARD LVCMOS33 } [get_ports { led[2] }]; #IO_L21N_T3_DQS_AD14N_35 Sch=led[2]
 #set_property -dict { PACKAGE_PIN M14   IOSTANDARD LVCMOS33 } [get_ports { led[3] }]; #IO_L23P_T3_35 Sch=led[3]
-set_property -dict { PACKAGE_PIN G14   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[0] }]; #IO_0_35 Sch=led4_b
-set_property -dict { PACKAGE_PIN L14   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[1] }]; #IO_L22P_T3_AD7P_35 Sch=led4_g
-set_property -dict { PACKAGE_PIN M15   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[2] }]; #IO_L23N_T3_35 Sch=led4_r
-set_property -dict { PACKAGE_PIN L15   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[3] }]; #IO_L22N_T3_AD7N_35 Sch=led5_b
-set_property -dict { PACKAGE_PIN G17   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[4] }]; #IO_L16P_T2_35 Sch=led5_g
-set_property -dict { PACKAGE_PIN N15   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[5] }]; #IO_L21P_T3_DQS_AD14P_35 Sch=led5_r
+set_property -dict { PACKAGE_PIN L15   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[0] }]; #IO_0_35 Sch=led4_b
+set_property -dict { PACKAGE_PIN G17   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[1] }]; #IO_L22P_T3_AD7P_35 Sch=led4_g
+set_property -dict { PACKAGE_PIN N15   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[2] }]; #IO_L23N_T3_35 Sch=led4_r
+set_property -dict { PACKAGE_PIN G14   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[3] }]; #IO_L22N_T3_AD7N_35 Sch=led5_b
+set_property -dict { PACKAGE_PIN L14   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[4] }]; #IO_L16P_T2_35 Sch=led5_g
+set_property -dict { PACKAGE_PIN M15   IOSTANDARD LVCMOS33 } [get_ports { rgbled_tri_io[5] }]; #IO_L21P_T3_DQS_AD14P_35 Sch=led5_r
 #set_property -dict { PACKAGE_PIN F17   IOSTANDARD LVCMOS33 } [get_ports { m_clk }]; #IO_L6N_T0_VREF_35 Sch=m_clk
 #set_property -dict { PACKAGE_PIN G18   IOSTANDARD LVCMOS33 } [get_ports { m_data }]; #IO_L16N_T2_35 Sch=m_data
 #set_property PACKAGE_PIN J15 [get_ports {netic20_j15}]; #IO_25_35
