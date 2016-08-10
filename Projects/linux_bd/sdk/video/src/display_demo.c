@@ -180,15 +180,6 @@ void DemoRun()
 		case '5':
 			DemoInvertFrame(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
 			break;
-		case '6':
-			nextFrame = dispCtrl.curFrame + 1;
-			if (nextFrame >= DISPLAY_NUM_FRAMES)
-			{
-				nextFrame = 0;
-			}
-			DemoInvertFrame(dispCtrl.framePtr[dispCtrl.curFrame], dispCtrl.framePtr[nextFrame], dispCtrl.vMode.width, dispCtrl.vMode.height, dispCtrl.stride);
-			DisplayChangeFrame(&dispCtrl, nextFrame);
-			break;
 		case 'q':
 			break;
 		default :
@@ -214,10 +205,9 @@ void DemoPrintMenu()
 	xil_printf("\n\r");
 	xil_printf("1 - Change Display Resolution\n\r");
 	xil_printf("2 - Change Display Framebuffer Index\n\r");
-	xil_printf("3 - Print Blended Test Pattern to Display Framebuffer**BROKEN**(it expects 24-bit RGB allignment)\n\r");
+	xil_printf("3 - Print Blended Test Pattern to Display Framebuffer\n\r");
 	xil_printf("4 - Print Color Bar Test Pattern to Display Framebuffer\n\r");
 	xil_printf("5 - Invert Current Frame colors\n\r");
-	xil_printf("6 - Invert Current Frame colors seamlessly\n\r");
 	xil_printf("q - Quit\n\r");
 	xil_printf("\n\r");
 	xil_printf("\n\r");
@@ -353,9 +343,9 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 	case DEMO_PATTERN_0:
 
 		xInt = width / 4; //Four intervals, each with width/4 pixels
-		xLeft = xInt * 3;
-		xMid = xInt * 2 * 3;
-		xRight = xInt * 3 * 3;
+		xLeft = xInt * 4;
+		xMid = xInt * 2 * 4;
+		xRight = xInt * 3 * 4;
 		xInc = 256.0 / ((double) xInt); //256 color intensities are cycled through per interval (overflow must be caught when color=256.0)
 
 		yInt = height / 2; //Two intervals, each with width/2 lines
@@ -364,7 +354,7 @@ void DemoPrintTest(u8 *frame, u32 width, u32 height, u32 stride, int pattern)
 
 		fBlue = 0.0;
 		fRed = 256.0;
-		for(xcoi = 0; xcoi < (width*3); xcoi+=3)
+		for(xcoi = 0; xcoi < (width*4); xcoi+=4)
 		{
 			/*
 			 * Convert color intensities to integers < 256, and trim values >=256

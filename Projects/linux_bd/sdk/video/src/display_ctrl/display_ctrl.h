@@ -68,7 +68,7 @@
 /*
  * This driver currently supports 3 frames.
  */
-#define DISPLAY_NUM_FRAMES 3
+#define DISPLAY_NUM_FRAMES 1
 
 /* ------------------------------------------------------------ */
 /*					General Type Declarations					*/

@@ -65,6 +65,7 @@ Temporary Items
 
 # sdk exclusions
 Projects/*/sdk/.metadata
+Projects/*/sdk/.sdk
 Projects/*/sdk/**/*RemoteSystemsTempFiles
 Projects/*/sdk/**/*Debug
 Projects/*/sdk/**/*Release

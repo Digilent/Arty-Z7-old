@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>video_bsp_xsysmon_polled_printf_example_1</name>
-	<comment>Created by SDK v2016.1. video_bsp - ps7_cortexa9_0</comment>
+	<name>gpio</name>
+	<comment>Created by SDK v2016.2. gpio_bsp - ps7_cortexa9_0</comment>
 	<projects>
-		<project>video_bsp</project>
+		<project>gpio_bsp</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
