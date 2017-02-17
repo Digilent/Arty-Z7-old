@@ -118,12 +118,12 @@
 ##ChipKit Digital I/O On Outer Analog Header
 ##NOTE: These pins should be used when using the analog header signals A0-A5 as digital I/O (Chipkit digital pins 0-5)
 
-set_property -dict { PACKAGE_PIN Y11   IOSTANDARD LVCMOS33 } [get_ports { ck_a[0] }]; #IO_L18N_T2_13 Sch=CK_A0
-set_property -dict { PACKAGE_PIN Y12   IOSTANDARD LVCMOS33 } [get_ports { ck_a[1] }]; #IO_L20P_T3_13 Sch=CK_A1
-set_property -dict { PACKAGE_PIN W11   IOSTANDARD LVCMOS33 } [get_ports { ck_a[2] }]; #IO_L18P_T2_13 Sch=CK_A2
-set_property -dict { PACKAGE_PIN V11   IOSTANDARD LVCMOS33 } [get_ports { ck_a[3] }]; #IO_L21P_T3_DQS_13 Sch=CK_A3
-set_property -dict { PACKAGE_PIN T5    IOSTANDARD LVCMOS33 } [get_ports { ck_a[4] }]; #IO_L19P_T3_13 Sch=CK_A4
-set_property -dict { PACKAGE_PIN U10   IOSTANDARD LVCMOS33 } [get_ports { ck_a[5] }]; #IO_L12N_T1_MRCC_13 Sch=CK_A5
+#set_property -dict { PACKAGE_PIN Y11   IOSTANDARD LVCMOS33 } [get_ports { ck_a[0] }]; #IO_L18N_T2_13 Sch=CK_A0
+#set_property -dict { PACKAGE_PIN Y12   IOSTANDARD LVCMOS33 } [get_ports { ck_a[1] }]; #IO_L20P_T3_13 Sch=CK_A1
+#set_property -dict { PACKAGE_PIN W11   IOSTANDARD LVCMOS33 } [get_ports { ck_a[2] }]; #IO_L18P_T2_13 Sch=CK_A2
+#set_property -dict { PACKAGE_PIN V11   IOSTANDARD LVCMOS33 } [get_ports { ck_a[3] }]; #IO_L21P_T3_DQS_13 Sch=CK_A3
+#set_property -dict { PACKAGE_PIN T5    IOSTANDARD LVCMOS33 } [get_ports { ck_a[4] }]; #IO_L19P_T3_13 Sch=CK_A4
+#set_property -dict { PACKAGE_PIN U10   IOSTANDARD LVCMOS33 } [get_ports { ck_a[5] }]; #IO_L12N_T1_MRCC_13 Sch=CK_A5
 
 ##ChipKit Digital I/O On Inner Analog Header
 ##NOTE: These pins will need to be connected to the XADC core when used as differential analog inputs (Chipkit analog pins A6-A11)
