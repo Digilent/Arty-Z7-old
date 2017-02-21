@@ -5,9 +5,9 @@
 // 
 // Create Date: 4/14/2016
 // Update Date: 2/10/2017
-// Design Name: Arty Z7-7010 Xadc reference project 
+// Design Name: Arty Z7-10 Xadc reference project 
 // Module Name: XADC
-// Target Devices: Digilent Arty Z7-7010 rev. B
+// Target Devices: Digilent Arty Z7-10 rev. B
 // Tool Versions: Vivado 2016.4
 // Description: Demo that uses two XADC channels and will take input from switch to decide which xadc channel to drive a pwm'd led
 // Dependencies: 
