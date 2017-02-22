@@ -44,6 +44,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 set list_projs [get_projects -quiet]
 if { $list_projs eq "" } {
    create_project project_1 myproj -part xc7z010clg400-1
+   set_property BOARD_PART digilentinc.com:arty-z7-10:part0:1.0 [current_project]
 }
 
 
@@ -163,6 +164,11 @@ proc create_root_design { parentCell } {
 
   # Create instance: axi_dynclk_0, and set properties
   set axi_dynclk_0 [ create_bd_cell -type ip -vlnv digilentinc.com:ip:axi_dynclk:1.0 axi_dynclk_0 ]
+
+  set_property -dict [ list \
+CONFIG.NUM_READ_OUTSTANDING {1} \
+CONFIG.NUM_WRITE_OUTSTANDING {1} \
+ ] [get_bd_intf_pins /axi_dynclk_0/s00_axi]
 
   # Create instance: axi_gpio_hdmi, and set properties
   set axi_gpio_hdmi [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_hdmi ]
@@ -1501,11 +1507,11 @@ preplace inst v_axi4s_vid_out_0 -pg 1 -lvl 7 -y 710 -defaultsOSRD
 preplace inst v_tc_0 -pg 1 -lvl 6 -y 700 -defaultsOSRD
 preplace inst axi_vdma_0 -pg 1 -lvl 5 -y 530 -defaultsOSRD
 preplace inst xlconstant_1 -pg 1 -lvl 5 -y 410 -defaultsOSRD
-preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -y 690 -defaultsOSRD
 preplace inst xlconcat_0 -pg 1 -lvl 2 -y 450 -defaultsOSRD
+preplace inst proc_sys_reset_0 -pg 1 -lvl 3 -y 690 -defaultsOSRD
+preplace inst rgb2dvi_0 -pg 1 -lvl 8 -y 760 -defaultsOSRD
 preplace inst proc_sys_reset_1 -pg 1 -lvl 1 -y 130 -defaultsOSRD
 preplace inst axi_gpio_hdmi -pg 1 -lvl 8 -y 910 -defaultsOSRD
-preplace inst rgb2dvi_0 -pg 1 -lvl 8 -y 760 -defaultsOSRD
 preplace inst axis_subset_converter_0 -pg 1 -lvl 6 -y 520 -defaultsOSRD
 preplace inst axi_dynclk_0 -pg 1 -lvl 5 -y 700 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 4 -y 570 -defaultsOSRD
@@ -1516,8 +1522,8 @@ preplace netloc processing_system7_0_DDR 1 3 6 NJ 290 NJ 290 NJ 290 NJ 290 NJ 29
 preplace netloc xlconstant_1_dout 1 5 1 1860J
 preplace netloc axis_subset_converter_0_M_AXIS 1 6 1 2130
 preplace netloc axi_dynclk_0_PXL_CLK_O 1 5 3 1820 840 2140 840 2400J
-preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1110
 preplace netloc v_axi4s_vid_out_0_vid_io_out 1 7 1 2430
+preplace netloc processing_system7_0_M_AXI_GP0 1 3 1 1110
 preplace netloc axi_vdma_0_M_AXI_MM2S 1 1 5 360 230 NJ 230 NJ 230 NJ 230 1810
 preplace netloc rst_processing_system7_0_150M_peripheral_aresetn 1 1 1 350
 preplace netloc axi_dynclk_0_LOCKED_O 1 5 3 1830 860 NJ 860 2410J
@@ -1527,21 +1533,21 @@ preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 4 10 580 NJ 580 640 580 1
 preplace netloc ps7_0_axi_periph_M03_AXI 1 4 2 1440J 620 N
 preplace netloc axi_mem_intercon_M00_AXI 1 2 1 640
 preplace netloc axi_dynclk_0_PXL_CLK_5X_O 1 5 3 1840 850 NJ 850 2420J
-preplace netloc ps7_0_axi_periph_M01_AXI 1 4 4 1430 890 NJ 890 NJ 890 NJ
 preplace netloc rgb2dvi_0_TMDS 1 8 1 NJ
+preplace netloc ps7_0_axi_periph_M01_AXI 1 4 4 1430 890 NJ 890 NJ 890 NJ
 preplace netloc processing_system7_0_IIC_1 1 3 6 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ
-preplace netloc proc_sys_reset_0_interconnect_aresetn 1 3 1 1120
 preplace netloc rst_processing_system7_0_150M_interconnect_aresetn 1 1 1 330
 preplace netloc rst_processing_system7_0_100M_peripheral_aresetn 1 3 5 1130 930 1470 930 1860 930 NJ 930 NJ
+preplace netloc proc_sys_reset_0_interconnect_aresetn 1 3 1 1120
 preplace netloc xlconcat_0_dout 1 2 1 N
 preplace netloc v_axi4s_vid_out_0_vtg_ce 1 5 3 1870 900 NJ 900 2390
-preplace netloc axi_gpio_0_GPIO2 1 8 1 NJ
 preplace netloc processing_system7_0_FIXED_IO 1 3 6 NJ 310 NJ 310 NJ 310 NJ 310 NJ 310 NJ
+preplace netloc axi_gpio_0_GPIO2 1 8 1 NJ
 preplace netloc axi_vdma_0_mm2s_introut 1 1 5 340 780 NJ 780 NJ 780 NJ 780 1810
 preplace netloc axi_gpio_0_ip2intc_irpt 1 1 8 330 880 NJ 880 NJ 880 NJ 880 NJ 880 NJ 880 2430J 840 2660
 preplace netloc processing_system7_0_FCLK_CLK0 1 2 6 660 910 1110 910 1460 910 1850 910 NJ 910 NJ
-preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 1450
 preplace netloc v_tc_0_vtiming_out 1 6 1 2130
+preplace netloc ps7_0_axi_periph_M00_AXI 1 4 1 1450
 preplace netloc processing_system7_0_FCLK_CLK1 1 0 7 0 240 340 240 650 240 1100 240 1470 240 1870 240 2140
 levelinfo -pg 1 -20 170 510 890 1300 1650 2000 2270 2550 2700 -top 0 -bot 980
 ",
