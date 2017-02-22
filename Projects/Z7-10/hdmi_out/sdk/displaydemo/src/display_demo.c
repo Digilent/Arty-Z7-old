@@ -1,6 +1,6 @@
 /************************************************************************/
 /*																		*/
-/*	display_demo.c	--	ZYBO Display demonstration 						*/
+/*	display_demo.c	--	Arty Z7-10 Display demonstration 						*/
 /*																		*/
 /************************************************************************/
 /*	Author: Sam Bobrowicz												*/
@@ -16,6 +16,7 @@
 /*  Revision History:													*/
 /* 																		*/
 /*		2/5/2016(SamB): Created											*/
+/*		2/5/2017(MonicaI): Updated name for Arty Z7-10 board			*/
 /*																		*/
 /************************************************************************/
 
@@ -205,7 +206,7 @@ void DemoPrintMenu()
 	xil_printf("\x1B[H"); //Set cursor to top left of terminal
 	xil_printf("\x1B[2J"); //Clear terminal
 	xil_printf("**************************************************\n\r");
-	xil_printf("*               ZYBO Display Demo                *\n\r");
+	xil_printf("*               Arty Z7 HDMI Out Demo            *\n\r");
 	xil_printf("**************************************************\n\r");
 	xil_printf("*Display Resolution: %28s*\n\r", dispCtrl.vMode.label);
 	printf("*Display Pixel Clock Freq. (MHz): %15.3f*\n\r", dispCtrl.pxlFreq);
@@ -299,7 +300,7 @@ void DemoCRMenu()
 	xil_printf("\x1B[H"); //Set cursor to top left of terminal
 	xil_printf("\x1B[2J"); //Clear terminal
 	xil_printf("**************************************************\n\r");
-	xil_printf("*               ZYBO Display Demo                *\n\r");
+	xil_printf("*               Arty Z7 HDMI Out Demo            *\n\r");
 	xil_printf("**************************************************\n\r");
 	xil_printf("*Current Resolution: %28s*\n\r", dispCtrl.vMode.label);
 	printf("*Pixel Clock Freq. (MHz): %23.3f*\n\r", dispCtrl.pxlFreq);
